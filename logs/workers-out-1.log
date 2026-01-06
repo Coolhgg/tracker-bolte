@@ -513,10 +513,10 @@
 2026-01-03 20:48:42: [Workers] Heartbeat updated
 2026-01-03 20:48:42: [Workers] Heartbeat sent
 2026-01-03 20:48:42: [Workers] Heartbeat sent
-2026-01-06 19:52:37: 
-2026-01-06 19:52:37: > app@0.1.0 worker
-2026-01-06 19:52:37: > npx tsx src/workers/index.ts
-2026-01-06 19:52:37: 
-2026-01-06 19:52:37: [Redis] Single-node mode using REDIS_URL
-2026-01-06 19:52:37: [Queues] Initializing with Redis mode: single-node
-2026-01-06 19:52:37: [Workers] Starting...
+2026-01-06 20:33:55: 
+2026-01-06 20:33:55: > app@0.1.0 worker
+2026-01-06 20:33:55: > npx tsx src/workers/index.ts
+2026-01-06 20:33:55: 
+2026-01-06 20:33:56: [Redis] Single-node mode using REDIS_URL
+2026-01-06 20:33:56: [Queues] Initializing with Redis mode: single-node
+2026-01-06 20:33:56: [Workers] Starting...
