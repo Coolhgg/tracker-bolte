@@ -412,15 +412,3 @@
 2026-01-03 20:48:43:   }
 2026-01-03 20:48:43: }
 2026-01-03 20:48:43: [Redis] Warning: Redis is currently unreachable. Retrying in background...
-2026-01-06 20:33:56: [Workers] Failed to acquire global lock: Error: Stream isn't writeable and enableOfflineQueue options is false
-2026-01-06 20:33:56:     at EventEmitter.sendCommand (/home/user/app/node_modules/ioredis/built/Redis.js:365:32)
-2026-01-06 20:33:56:     at EventEmitter.set (/home/user/app/node_modules/ioredis/built/utils/Commander.js:90:25)
-2026-01-06 20:33:56:     at acquireGlobalLock (/home/user/app/src/workers/index.ts:223:32)
-2026-01-06 20:33:56:     at start (/home/user/app/src/workers/index.ts:284:33)
-2026-01-06 20:33:56:     at <anonymous> (/home/user/app/src/workers/index.ts:471:1)
-2026-01-06 20:33:56:     at Object.<anonymous> (/home/user/app/src/workers/index.ts:474:2)
-2026-01-06 20:33:56:     at Module._compile (node:internal/modules/cjs/loader:1706:14)
-2026-01-06 20:33:56:     at Object.transformer (/home/user/app/node_modules/tsx/dist/register-D46fvsV_.cjs:3:1104)
-2026-01-06 20:33:56:     at Module.load (node:internal/modules/cjs/loader:1441:32)
-2026-01-06 20:33:56:     at Function._load (node:internal/modules/cjs/loader:1263:12)
-2026-01-06 20:33:56: [Workers] Another worker instance is already running. Exiting to avoid duplicate execution.
