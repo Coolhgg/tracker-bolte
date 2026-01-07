@@ -1,5 +1,5 @@
 import { Queue } from 'bullmq';
-import { redisWorkerClient, REDIS_KEY_PREFIX, redisMode } from './redis';
+import { redisWorker, REDIS_KEY_PREFIX, redisMode } from './redis';
 
 export const SYNC_SOURCE_QUEUE = 'sync-source';
 export const CHECK_SOURCE_QUEUE = 'check-source';
@@ -18,7 +18,7 @@ export const GAP_RECOVERY_QUEUE = 'gap-recovery';
  * preventing connection exhaustion on the API Redis.
  */
 const queueOptions = {
-  connection: redisWorkerClient,
+  connection: redisWorker,
   prefix: REDIS_KEY_PREFIX,
 };
 

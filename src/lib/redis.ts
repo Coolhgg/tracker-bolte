@@ -83,8 +83,8 @@ export function buildRedisOptions(url?: string): RedisOptions {
  * Singleton pattern for Next.js hot reload protection
  */
 const globalForRedis = globalThis as unknown as { 
-  redisApiClient: Redis | undefined;
-  redisWorkerClient: Redis | undefined;
+  redisApi: Redis | undefined;
+  redisWorker: Redis | undefined;
 };
 
 /**
@@ -117,7 +117,7 @@ function createRedisClient(options: RedisOptions, name: string): Redis {
 }
 
 // REDIS A: API + caching
-export const redisApiClient = globalForRedis.redisApiClient ?? createRedisClient(
+export const redisApi = globalForRedis.redisApi ?? createRedisClient(
   { 
     ...buildRedisOptions(process.env.REDIS_API_URL || process.env.REDIS_URL),
     enableReadyCheck: true 
@@ -126,40 +126,52 @@ export const redisApiClient = globalForRedis.redisApiClient ?? createRedisClient
 );
 
 // REDIS B: Workers + BullMQ queues
-export const redisWorkerClient = globalForRedis.redisWorkerClient ?? createRedisClient(
+export const redisWorker = globalForRedis.redisWorker ?? createRedisClient(
   { 
     ...buildRedisOptions(process.env.REDIS_WORKER_URL || process.env.REDIS_URL),
+    maxRetriesPerRequest: null, // CRITICAL for BullMQ
     enableReadyCheck: false // Requested for workers
   },
   'Worker'
 );
 
-// Default export for backward compatibility (points to API client)
-export const redis = redisApiClient;
+// Compatibility aliases
+export const redis = redisApi;
+export const redisApiClient = redisApi;
+export const redisWorkerClient = redisWorker;
 
 if (process.env.NODE_ENV !== 'production') {
-  globalForRedis.redisApiClient = redisApiClient;
-  globalForRedis.redisWorkerClient = redisWorkerClient;
+  globalForRedis.redisApi = redisApi;
+  globalForRedis.redisWorker = redisWorker;
 }
 
 /**
  * Connection options for BullMQ (uses Worker Redis).
  */
-export const redisConnection: RedisOptions = buildRedisOptions(process.env.REDIS_WORKER_URL || process.env.REDIS_URL);
+export const redisConnection: RedisOptions = {
+  ...buildRedisOptions(process.env.REDIS_WORKER_URL || process.env.REDIS_URL),
+  maxRetriesPerRequest: null,
+  enableReadyCheck: false,
+};
 
 /**
  * Check if Redis is currently connected and responsive.
  */
-export function isRedisAvailable(client: Redis = redisApiClient): boolean {
+export function isRedisAvailable(client: Redis = redisApi): boolean {
   return client.status === 'ready';
 }
 
 /**
  * Wait for Redis to be ready (with timeout).
  */
-export async function waitForRedis(client: Redis = redisApiClient, timeoutMs: number = 3000): Promise<boolean> {
+export async function waitForRedis(client: Redis = redisApi, timeoutMs: number = 3000): Promise<boolean> {
   if (client.status === 'ready') return true;
   if (client.status === 'end' || client.status === 'close') return false;
+  
+  // If lazyConnect is on and status is wait, trigger connection
+  if (client.status === 'wait') {
+    client.connect().catch(() => {});
+  }
   
   return new Promise((resolve) => {
     const timeout = setTimeout(() => resolve(false), timeoutMs);
@@ -174,11 +186,11 @@ export async function waitForRedis(client: Redis = redisApiClient, timeoutMs: nu
  * Check if workers are online (status stored in API Redis).
  */
 export async function areWorkersOnline(): Promise<boolean> {
-  const redisReady = await waitForRedis(redisApiClient, 3000);
+  const redisReady = await waitForRedis(redisApi, 3000);
   if (!redisReady) return false;
   
   try {
-    const heartbeat = await redisApiClient.get(`${REDIS_KEY_PREFIX}workers:heartbeat`);
+    const heartbeat = await redisApi.get(`${REDIS_KEY_PREFIX}workers:heartbeat`);
     if (!heartbeat) return false;
     
     const data = JSON.parse(heartbeat);
@@ -200,7 +212,7 @@ export async function setWorkerHeartbeat(healthData?: any): Promise<void> {
       health: healthData || { status: 'healthy' },
       pid: process.pid,
     };
-    await redisApiClient.set(`${REDIS_KEY_PREFIX}workers:heartbeat`, JSON.stringify(payload), 'EX', 10);
+    await redisApi.set(`${REDIS_KEY_PREFIX}workers:heartbeat`, JSON.stringify(payload), 'EX', 10);
   } catch (err) {
     console.error('[Redis] Error setting worker heartbeat:', err);
     throw err;
@@ -217,7 +229,7 @@ export async function withLock<T>(
 ): Promise<T> {
   const fullLockKey = `${REDIS_KEY_PREFIX}lock:${lockKey}`;
   const lockValue = Math.random().toString(36).slice(2);
-  const acquired = await redisWorkerClient.set(fullLockKey, lockValue, 'PX', ttlMs, 'NX');
+  const acquired = await redisWorker.set(fullLockKey, lockValue, 'PX', ttlMs, 'NX');
   
   if (!acquired) throw new Error(`Failed to acquire lock: ${lockKey}`);
   
@@ -231,7 +243,7 @@ export async function withLock<T>(
         return 0
       end
     `;
-    await redisWorkerClient.eval(script, 1, fullLockKey, lockValue);
+    await redisWorker.eval(script, 1, fullLockKey, lockValue);
   }
 }
 
@@ -250,8 +262,8 @@ export async function disconnectRedis(): Promise<void> {
   };
 
   await Promise.all([
-    disconnect(redisApiClient, 'API'),
-    disconnect(redisWorkerClient, 'Worker')
+    disconnect(redisApi, 'API'),
+    disconnect(redisWorker, 'Worker')
   ]);
 }
 

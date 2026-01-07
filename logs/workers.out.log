@@ -1,0 +1,1531 @@
+
+> app@0.1.0 worker
+> npx tsx src/workers/index.ts
+
+[Queues] Initializing with Redis mode: single-node
+[Workers] Starting...
+[Redis:Worker] Connection initialized
+[Redis:API] Connection initialized
+[Redis:Worker] Ready to accept commands
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+[Redis:API] Ready to accept commands
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+IMPORTANT! Eviction policy is volatile-lru. It should be "noeviction"
+[Workers] Acquired global lock on dedicated Redis
+[Workers] Initial heartbeat sent
+[Scheduler] Starting master scheduler loop...
+[Scheduler] Running master scheduler...
+[Scheduler] Running priority maintenance...
+[Scheduler] Maintenance complete: 0 promoted to HOT, 0 downgraded to WARM, 0 downgraded to COLD
+[Scheduler] Running Cover Refresh Scheduler...
+[Scheduler] Queueing 101 covers for refresh
+[RefreshCover] Job refresh-mangadex-bd9cc854-8177-435e-a9fb-399c8bad5e16 started
+[RefreshCover] Processing 804db115-1fd4-4c27-8d1a-ec8016d51dfe (bd9cc854-8177-435e-a9fb-399c8bad5e16) from mangadex
+[RefreshCover] Job refresh-mangadex-e10ecff8-2f9b-4b1f-b67e-03f1ae6163f4 started
+[RefreshCover] Processing 2d32164e-8299-4887-8217-7c9d6d727738 (e10ecff8-2f9b-4b1f-b67e-03f1ae6163f4) from mangadex
+[RefreshCover] Job refresh-mangadex-4735297c-7843-450f-b2e0-721fca7e2844 started
+[RefreshCover] Processing 094e83c5-7ad4-4d8e-a88c-9c2ab458c981 (4735297c-7843-450f-b2e0-721fca7e2844) from mangadex
+[RefreshCover] Job refresh-mangadex-1a2abc8b-021e-4f4e-b4d4-6e70c24312d8 started
+[RefreshCover] Processing 972a45cb-92e5-4186-baa1-f308f4a8ce98 (1a2abc8b-021e-4f4e-b4d4-6e70c24312d8) from mangadex
+[RefreshCover] Job refresh-mangadex-2b0744d4-bcbf-448e-996f-3ac6f2ec6634 started
+[RefreshCover] Processing bc4fde9f-8305-4f44-a830-3e535c77440a (2b0744d4-bcbf-448e-996f-3ac6f2ec6634) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/bd9cc854-8177-435e-a9fb-399c8bad5e16/c760dc69-302d-456d-a2c4-1960e9866c82.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/e10ecff8-2f9b-4b1f-b67e-03f1ae6163f4/19d15f99-7ad6-48b0-92d7-56eb060d881d.png
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/1a2abc8b-021e-4f4e-b4d4-6e70c24312d8/5cb52ebf-5cf3-474e-ae5b-3d6c8e3a51b2.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/4735297c-7843-450f-b2e0-721fca7e2844/218f70a1-67c0-45ec-bf4d-e40a62b9705b.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/2b0744d4-bcbf-448e-996f-3ac6f2ec6634/70383ea8-0a6a-4fcc-9a4a-83f477b9d62d.png
+[RefreshCover] Updated cover for 804db115-1fd4-4c27-8d1a-ec8016d51dfe to https://uploads.mangadex.org/covers/bd9cc854-8177-435e-a9fb-399c8bad5e16/c760dc69-302d-456d-a2c4-1960e9866c82.jpg
+[RefreshCover] Job refresh-mangadex-bd9cc854-8177-435e-a9fb-399c8bad5e16 completed
+[RefreshCover] Job refresh-mangadex-3fc99491-9468-4d3f-9d1f-420644b269b7 started
+[RefreshCover] Processing 023a0d0f-1b40-43a1-b64b-1da3e191310d (3fc99491-9468-4d3f-9d1f-420644b269b7) from mangadex
+[RefreshCover] Updated cover for 094e83c5-7ad4-4d8e-a88c-9c2ab458c981 to https://uploads.mangadex.org/covers/4735297c-7843-450f-b2e0-721fca7e2844/218f70a1-67c0-45ec-bf4d-e40a62b9705b.jpg
+[RefreshCover] Updated cover for 972a45cb-92e5-4186-baa1-f308f4a8ce98 to https://uploads.mangadex.org/covers/1a2abc8b-021e-4f4e-b4d4-6e70c24312d8/5cb52ebf-5cf3-474e-ae5b-3d6c8e3a51b2.jpg
+[RefreshCover] Updated cover for 2d32164e-8299-4887-8217-7c9d6d727738 to https://uploads.mangadex.org/covers/e10ecff8-2f9b-4b1f-b67e-03f1ae6163f4/19d15f99-7ad6-48b0-92d7-56eb060d881d.png
+[RefreshCover] Job refresh-mangadex-4735297c-7843-450f-b2e0-721fca7e2844 completed
+[RefreshCover] Job refresh-mangadex-0ab9e0aa-b6ef-49d7-8806-1c9b3574a12c started
+[RefreshCover] Processing 204aca83-61ac-474a-afe1-e5bbe992c489 (0ab9e0aa-b6ef-49d7-8806-1c9b3574a12c) from mangadex
+[RefreshCover] Job refresh-mangadex-1a2abc8b-021e-4f4e-b4d4-6e70c24312d8 completed
+[RefreshCover] Job refresh-mangadex-3f697d04-0829-4403-baca-0bbb7752b1d9 started
+[RefreshCover] Processing f4e40230-0a0b-4bda-81f1-b74d5391107a (3f697d04-0829-4403-baca-0bbb7752b1d9) from mangadex
+[RefreshCover] Job refresh-mangadex-e10ecff8-2f9b-4b1f-b67e-03f1ae6163f4 completed
+[RefreshCover] Job refresh-mangadex-4e338970-63e8-489c-b937-5e7e3005e1e3 started
+[RefreshCover] Processing dd85a804-ce9c-4c4c-8fb0-254c5cdae426 (4e338970-63e8-489c-b937-5e7e3005e1e3) from mangadex
+[RefreshCover] Updated cover for bc4fde9f-8305-4f44-a830-3e535c77440a to https://uploads.mangadex.org/covers/2b0744d4-bcbf-448e-996f-3ac6f2ec6634/70383ea8-0a6a-4fcc-9a4a-83f477b9d62d.png
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/3fc99491-9468-4d3f-9d1f-420644b269b7/7d44b8ae-38fa-4bb3-a129-d3d5d583c2ae.jpg
+[RefreshCover] Job refresh-mangadex-2b0744d4-bcbf-448e-996f-3ac6f2ec6634 completed
+[RefreshCover] Job refresh-mangadex-ce4e4810-ce34-47f1-8b5c-b66c29eb0612 started
+[RefreshCover] Processing 2f59a680-1911-45b0-a59b-b9ba8488bbd7 (ce4e4810-ce34-47f1-8b5c-b66c29eb0612) from mangadex
+[RefreshCover] Updated cover for 023a0d0f-1b40-43a1-b64b-1da3e191310d to https://uploads.mangadex.org/covers/3fc99491-9468-4d3f-9d1f-420644b269b7/7d44b8ae-38fa-4bb3-a129-d3d5d583c2ae.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/0ab9e0aa-b6ef-49d7-8806-1c9b3574a12c/11fa680f-eaee-47e8-95f6-ae301f66558f.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/3f697d04-0829-4403-baca-0bbb7752b1d9/a3bb0aee-ee16-496e-8fdb-6f8d1730c4c6.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/4e338970-63e8-489c-b937-5e7e3005e1e3/ab4118be-de43-47bb-8064-2c4a287ec05a.jpg
+[RefreshCover] Job refresh-mangadex-3fc99491-9468-4d3f-9d1f-420644b269b7 completed
+[RefreshCover] Job refresh-mangadex-f1311d54-99bc-49ed-b12f-099b9a40c104 started
+[RefreshCover] Processing 907a0164-3631-4b28-b9de-ec56a8075812 (f1311d54-99bc-49ed-b12f-099b9a40c104) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/ce4e4810-ce34-47f1-8b5c-b66c29eb0612/9a60c1e9-cddb-47c8-8719-e37c77bb4c47.jpg
+[RefreshCover] Updated cover for 204aca83-61ac-474a-afe1-e5bbe992c489 to https://uploads.mangadex.org/covers/0ab9e0aa-b6ef-49d7-8806-1c9b3574a12c/11fa680f-eaee-47e8-95f6-ae301f66558f.jpg
+[RefreshCover] Updated cover for f4e40230-0a0b-4bda-81f1-b74d5391107a to https://uploads.mangadex.org/covers/3f697d04-0829-4403-baca-0bbb7752b1d9/a3bb0aee-ee16-496e-8fdb-6f8d1730c4c6.jpg
+[RefreshCover] Updated cover for dd85a804-ce9c-4c4c-8fb0-254c5cdae426 to https://uploads.mangadex.org/covers/4e338970-63e8-489c-b937-5e7e3005e1e3/ab4118be-de43-47bb-8064-2c4a287ec05a.jpg
+[RefreshCover] Job refresh-mangadex-0ab9e0aa-b6ef-49d7-8806-1c9b3574a12c completed
+[RefreshCover] Job refresh-mangadex-df9316fb-f900-49b4-96ac-8dbca96d2fac started
+[RefreshCover] Processing cd607793-38ef-4ecb-b3e3-c58aa5b9b2d4 (df9316fb-f900-49b4-96ac-8dbca96d2fac) from mangadex
+[RefreshCover] Job refresh-mangadex-3f697d04-0829-4403-baca-0bbb7752b1d9 completed
+[RefreshCover] Job refresh-mangadex-bd35c947-4969-4fb5-b949-cac46ebb60b6 started
+[RefreshCover] Processing bad492a0-29c2-4abb-a261-04f71147b3db (bd35c947-4969-4fb5-b949-cac46ebb60b6) from mangadex
+[RefreshCover] Job refresh-mangadex-4e338970-63e8-489c-b937-5e7e3005e1e3 completed
+[RefreshCover] Job refresh-mangadex-159d8b5b-ecdd-4da7-8dee-08ee120821db started
+[RefreshCover] Processing 420ff37b-c8f1-4482-b739-690a0f27b8b8 (159d8b5b-ecdd-4da7-8dee-08ee120821db) from mangadex
+[RefreshCover] Updated cover for 2f59a680-1911-45b0-a59b-b9ba8488bbd7 to https://uploads.mangadex.org/covers/ce4e4810-ce34-47f1-8b5c-b66c29eb0612/9a60c1e9-cddb-47c8-8719-e37c77bb4c47.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/f1311d54-99bc-49ed-b12f-099b9a40c104/d40e5680-5642-40f9-adbe-f86d83fca605.jpg
+[RefreshCover] Job refresh-mangadex-ce4e4810-ce34-47f1-8b5c-b66c29eb0612 completed
+[RefreshCover] Job refresh-mangadex-f1680061-212b-4265-a201-61bd371f7328 started
+[RefreshCover] Processing f78bb075-dccf-459a-9d2a-9b5e995a9bd4 (f1680061-212b-4265-a201-61bd371f7328) from mangadex
+[RefreshCover] Updated cover for 907a0164-3631-4b28-b9de-ec56a8075812 to https://uploads.mangadex.org/covers/f1311d54-99bc-49ed-b12f-099b9a40c104/d40e5680-5642-40f9-adbe-f86d83fca605.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/df9316fb-f900-49b4-96ac-8dbca96d2fac/2c777fd6-4cc9-4475-b992-b45ea8e4a8da.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/bd35c947-4969-4fb5-b949-cac46ebb60b6/538ecb5f-c2c6-4003-9240-bd222eb8c91d.jpg
+[RefreshCover] Job refresh-mangadex-f1311d54-99bc-49ed-b12f-099b9a40c104 completed
+[RefreshCover] Job refresh-mangadex-04c892b3-a202-46f5-ad11-0d433e712ab8 started
+[RefreshCover] Processing c8b5021c-a143-4058-9e55-a782b4d80c64 (04c892b3-a202-46f5-ad11-0d433e712ab8) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/159d8b5b-ecdd-4da7-8dee-08ee120821db/4f9b6433-fa18-407b-abd4-5e43ccd9ae46.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/f1680061-212b-4265-a201-61bd371f7328/2656e78d-8f44-4855-a16c-300f0d5e6f8d.png
+[RefreshCover] Updated cover for cd607793-38ef-4ecb-b3e3-c58aa5b9b2d4 to https://uploads.mangadex.org/covers/df9316fb-f900-49b4-96ac-8dbca96d2fac/2c777fd6-4cc9-4475-b992-b45ea8e4a8da.jpg
+[Workers] Heartbeat sent
+[RefreshCover] Updated cover for bad492a0-29c2-4abb-a261-04f71147b3db to https://uploads.mangadex.org/covers/bd35c947-4969-4fb5-b949-cac46ebb60b6/538ecb5f-c2c6-4003-9240-bd222eb8c91d.jpg
+[RefreshCover] Job refresh-mangadex-df9316fb-f900-49b4-96ac-8dbca96d2fac completed
+[RefreshCover] Job refresh-mangadex-54850b13-2084-4d60-9e6b-22245350b617 started
+[RefreshCover] Processing 2f2bee7c-5c2e-459b-a476-ad1491592f83 (54850b13-2084-4d60-9e6b-22245350b617) from mangadex
+[RefreshCover] Job refresh-mangadex-bd35c947-4969-4fb5-b949-cac46ebb60b6 completed
+[RefreshCover] Job refresh-mangadex-520ed38f-2fdc-4a44-9783-507c7c9003de started
+[RefreshCover] Processing d9f96ca3-f8b7-4a65-b77e-e9d90f046efc (520ed38f-2fdc-4a44-9783-507c7c9003de) from mangadex
+[RefreshCover] Updated cover for 420ff37b-c8f1-4482-b739-690a0f27b8b8 to https://uploads.mangadex.org/covers/159d8b5b-ecdd-4da7-8dee-08ee120821db/4f9b6433-fa18-407b-abd4-5e43ccd9ae46.jpg
+[RefreshCover] Updated cover for f78bb075-dccf-459a-9d2a-9b5e995a9bd4 to https://uploads.mangadex.org/covers/f1680061-212b-4265-a201-61bd371f7328/2656e78d-8f44-4855-a16c-300f0d5e6f8d.png
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/04c892b3-a202-46f5-ad11-0d433e712ab8/20152fd4-5c97-4a30-abbb-b16ca20aee1d.jpg
+[RefreshCover] Job refresh-mangadex-159d8b5b-ecdd-4da7-8dee-08ee120821db completed
+[RefreshCover] Job refresh-mangadex-be032001-5265-4f89-8000-ed0d18c8c126 started
+[RefreshCover] Processing 53c93100-d39e-4578-858c-6f4ec398849c (be032001-5265-4f89-8000-ed0d18c8c126) from mangadex
+[RefreshCover] Job refresh-mangadex-f1680061-212b-4265-a201-61bd371f7328 completed
+[RefreshCover] Job refresh-mangadex-f6635579-f1e6-4e43-8adf-06b009e1af0c started
+[RefreshCover] Processing d1e2e2f5-cde9-4a51-92eb-d3b4b544cb22 (f6635579-f1e6-4e43-8adf-06b009e1af0c) from mangadex
+[RefreshCover] Updated cover for c8b5021c-a143-4058-9e55-a782b4d80c64 to https://uploads.mangadex.org/covers/04c892b3-a202-46f5-ad11-0d433e712ab8/20152fd4-5c97-4a30-abbb-b16ca20aee1d.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/54850b13-2084-4d60-9e6b-22245350b617/19550ff8-f65e-4763-82fa-1b7c6ee3e057.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/520ed38f-2fdc-4a44-9783-507c7c9003de/6c0c911a-ae9c-411e-9e7a-d668ed1ccc2a.jpg
+[RefreshCover] Job refresh-mangadex-04c892b3-a202-46f5-ad11-0d433e712ab8 completed
+[RefreshCover] Job refresh-mangadex-6ee36b13-2277-4ab1-a85b-d62cba796732 started
+[RefreshCover] Processing a5115ddc-eff5-4ded-b704-48166eaa2abd (6ee36b13-2277-4ab1-a85b-d62cba796732) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/be032001-5265-4f89-8000-ed0d18c8c126/d5d4faeb-dfa9-4c95-94fe-f71211d9b197.png
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/f6635579-f1e6-4e43-8adf-06b009e1af0c/0f405663-c66b-469f-acdb-5f791fb57342.jpg
+[RefreshCover] Updated cover for 2f2bee7c-5c2e-459b-a476-ad1491592f83 to https://uploads.mangadex.org/covers/54850b13-2084-4d60-9e6b-22245350b617/19550ff8-f65e-4763-82fa-1b7c6ee3e057.jpg
+[RefreshCover] Updated cover for d9f96ca3-f8b7-4a65-b77e-e9d90f046efc to https://uploads.mangadex.org/covers/520ed38f-2fdc-4a44-9783-507c7c9003de/6c0c911a-ae9c-411e-9e7a-d668ed1ccc2a.jpg
+[RefreshCover] Job refresh-mangadex-54850b13-2084-4d60-9e6b-22245350b617 completed
+[RefreshCover] Job refresh-mangadex-ccd0444d-39e1-436c-b094-bb6fe90772be started
+[RefreshCover] Processing f801dd22-2bb4-44de-aa12-ad01633c1a8e (ccd0444d-39e1-436c-b094-bb6fe90772be) from mangadex
+[RefreshCover] Job refresh-mangadex-520ed38f-2fdc-4a44-9783-507c7c9003de completed
+[RefreshCover] Job refresh-mangadex-9d9740b9-1e51-4c1b-9338-ca4fa3338b8d started
+[RefreshCover] Processing d290b2ed-b995-42ed-9ebc-60c70ed02163 (9d9740b9-1e51-4c1b-9338-ca4fa3338b8d) from mangadex
+[RefreshCover] Updated cover for 53c93100-d39e-4578-858c-6f4ec398849c to https://uploads.mangadex.org/covers/be032001-5265-4f89-8000-ed0d18c8c126/d5d4faeb-dfa9-4c95-94fe-f71211d9b197.png
+[RefreshCover] Updated cover for d1e2e2f5-cde9-4a51-92eb-d3b4b544cb22 to https://uploads.mangadex.org/covers/f6635579-f1e6-4e43-8adf-06b009e1af0c/0f405663-c66b-469f-acdb-5f791fb57342.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/6ee36b13-2277-4ab1-a85b-d62cba796732/5bf7bf03-d0af-475c-bd42-1812eb80530f.jpg
+[RefreshCover] Job refresh-mangadex-be032001-5265-4f89-8000-ed0d18c8c126 completed
+[RefreshCover] Job refresh-mangadex-3f4cd135-f696-4695-a16b-cf07a333196f started
+[RefreshCover] Processing 7a981d47-47a3-435c-86bb-d8ca8486ccf6 (3f4cd135-f696-4695-a16b-cf07a333196f) from mangadex
+[RefreshCover] Job refresh-mangadex-f6635579-f1e6-4e43-8adf-06b009e1af0c completed
+[RefreshCover] Job refresh-mangadex-9e03b2ca-5191-44a6-88b6-c0cd49d06b51 started
+[RefreshCover] Processing 2b934901-efde-4280-8c01-6f199db877f0 (9e03b2ca-5191-44a6-88b6-c0cd49d06b51) from mangadex
+[RefreshCover] Updated cover for a5115ddc-eff5-4ded-b704-48166eaa2abd to https://uploads.mangadex.org/covers/6ee36b13-2277-4ab1-a85b-d62cba796732/5bf7bf03-d0af-475c-bd42-1812eb80530f.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/ccd0444d-39e1-436c-b094-bb6fe90772be/53125212-3d9d-4786-8fab-533e79d7ff9c.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/9d9740b9-1e51-4c1b-9338-ca4fa3338b8d/212770bb-794b-492d-b4da-fe93aa273b44.jpg
+[RefreshCover] Job refresh-mangadex-6ee36b13-2277-4ab1-a85b-d62cba796732 completed
+[RefreshCover] Job refresh-mangadex-51dde4ad-3431-4a57-8ebe-99c1691fdf6a started
+[RefreshCover] Processing 6b0c18e9-f1ff-4b44-9888-ea8e86a787de (51dde4ad-3431-4a57-8ebe-99c1691fdf6a) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/3f4cd135-f696-4695-a16b-cf07a333196f/6920c48c-129e-4d7a-89a3-a7fb685e4d61.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/9e03b2ca-5191-44a6-88b6-c0cd49d06b51/28988224-7496-4501-b864-f87eb3b9a603.jpg
+[RefreshCover] Updated cover for f801dd22-2bb4-44de-aa12-ad01633c1a8e to https://uploads.mangadex.org/covers/ccd0444d-39e1-436c-b094-bb6fe90772be/53125212-3d9d-4786-8fab-533e79d7ff9c.jpg
+[RefreshCover] Updated cover for d290b2ed-b995-42ed-9ebc-60c70ed02163 to https://uploads.mangadex.org/covers/9d9740b9-1e51-4c1b-9338-ca4fa3338b8d/212770bb-794b-492d-b4da-fe93aa273b44.jpg
+[RefreshCover] Job refresh-mangadex-ccd0444d-39e1-436c-b094-bb6fe90772be completed
+[RefreshCover] Job refresh-mangadex-2f9f7c49-ba4e-4665-aa68-0b1408cc16bd started
+[RefreshCover] Processing e75a12b6-6da0-46bf-b062-2a42971cebf6 (2f9f7c49-ba4e-4665-aa68-0b1408cc16bd) from mangadex
+[RefreshCover] Job refresh-mangadex-9d9740b9-1e51-4c1b-9338-ca4fa3338b8d completed
+[RefreshCover] Job refresh-mangadex-ae5b0197-83ab-4fe5-b894-3198eff16b4f started
+[RefreshCover] Processing ea576b51-3da3-473b-8701-1d6964d1adc0 (ae5b0197-83ab-4fe5-b894-3198eff16b4f) from mangadex
+[RefreshCover] Updated cover for 7a981d47-47a3-435c-86bb-d8ca8486ccf6 to https://uploads.mangadex.org/covers/3f4cd135-f696-4695-a16b-cf07a333196f/6920c48c-129e-4d7a-89a3-a7fb685e4d61.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/51dde4ad-3431-4a57-8ebe-99c1691fdf6a/37699dde-c788-4056-b735-bf11c51c9623.jpg
+[RefreshCover] Job refresh-mangadex-3f4cd135-f696-4695-a16b-cf07a333196f completed
+[RefreshCover] Job refresh-mangadex-7fdd6974-61ac-46f4-ab91-a5fd3ce1bb30 started
+[RefreshCover] Processing a0de943e-3a2c-4bf1-a36b-337310ae8cea (7fdd6974-61ac-46f4-ab91-a5fd3ce1bb30) from mangadex
+[RefreshCover] Updated cover for 2b934901-efde-4280-8c01-6f199db877f0 to https://uploads.mangadex.org/covers/9e03b2ca-5191-44a6-88b6-c0cd49d06b51/28988224-7496-4501-b864-f87eb3b9a603.jpg
+[RefreshCover] Job refresh-mangadex-9e03b2ca-5191-44a6-88b6-c0cd49d06b51 completed
+[RefreshCover] Job refresh-mangadex-7258fc1a-70fa-450d-9ee5-b550e8f2c2d3 started
+[RefreshCover] Processing 5b567334-b9b3-41a6-b42f-7747b6f9141f (7258fc1a-70fa-450d-9ee5-b550e8f2c2d3) from mangadex
+[RefreshCover] Updated cover for 6b0c18e9-f1ff-4b44-9888-ea8e86a787de to https://uploads.mangadex.org/covers/51dde4ad-3431-4a57-8ebe-99c1691fdf6a/37699dde-c788-4056-b735-bf11c51c9623.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/2f9f7c49-ba4e-4665-aa68-0b1408cc16bd/e38a1f55-0f45-451d-b7be-1043feed7892.jpg
+[RefreshCover] Job refresh-mangadex-51dde4ad-3431-4a57-8ebe-99c1691fdf6a completed
+[RefreshCover] Job refresh-mangadex-40a2695a-0fa9-47cb-9c71-daff8cfe2bd4 started
+[RefreshCover] Processing cc671933-a2c5-4fbf-97be-b5d65334fd39 (40a2695a-0fa9-47cb-9c71-daff8cfe2bd4) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/ae5b0197-83ab-4fe5-b894-3198eff16b4f/0795c40a-efcc-48f0-8686-da59d9a5f63b.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/7fdd6974-61ac-46f4-ab91-a5fd3ce1bb30/f2c7dcfa-37c8-4e72-b04e-6f80dfbe445b.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/7258fc1a-70fa-450d-9ee5-b550e8f2c2d3/f87cacd1-1659-421d-a83a-7ca2d90d02fa.jpg
+[RefreshCover] Updated cover for e75a12b6-6da0-46bf-b062-2a42971cebf6 to https://uploads.mangadex.org/covers/2f9f7c49-ba4e-4665-aa68-0b1408cc16bd/e38a1f55-0f45-451d-b7be-1043feed7892.jpg
+[RefreshCover] Job refresh-mangadex-2f9f7c49-ba4e-4665-aa68-0b1408cc16bd completed
+[RefreshCover] Job refresh-mangadex-c369117f-f517-4a49-9f11-7e420a1b2814 started
+[RefreshCover] Processing 88a43260-c323-49ef-a63a-1d80185d1504 (c369117f-f517-4a49-9f11-7e420a1b2814) from mangadex
+[RefreshCover] Updated cover for ea576b51-3da3-473b-8701-1d6964d1adc0 to https://uploads.mangadex.org/covers/ae5b0197-83ab-4fe5-b894-3198eff16b4f/0795c40a-efcc-48f0-8686-da59d9a5f63b.jpg
+[RefreshCover] Updated cover for a0de943e-3a2c-4bf1-a36b-337310ae8cea to https://uploads.mangadex.org/covers/7fdd6974-61ac-46f4-ab91-a5fd3ce1bb30/f2c7dcfa-37c8-4e72-b04e-6f80dfbe445b.jpg
+[RefreshCover] Job refresh-mangadex-ae5b0197-83ab-4fe5-b894-3198eff16b4f completed
+[RefreshCover] Job refresh-mangadex-6838fc3d-abc1-45a5-a5e7-23583d4b6eff started
+[RefreshCover] Processing b6930b48-6299-4e27-8fe3-071f1cb87c5e (6838fc3d-abc1-45a5-a5e7-23583d4b6eff) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/40a2695a-0fa9-47cb-9c71-daff8cfe2bd4/da89f222-6723-4f79-950d-24f1fc0b8281.jpg
+[RefreshCover] Job refresh-mangadex-7fdd6974-61ac-46f4-ab91-a5fd3ce1bb30 completed
+[RefreshCover] Job refresh-mangadex-fdf9592a-268a-4e83-bd54-9213985d7a2f started
+[RefreshCover] Processing 253c8d9a-19af-4597-a5ac-fa34518e9e43 (fdf9592a-268a-4e83-bd54-9213985d7a2f) from mangadex
+[RefreshCover] Updated cover for 5b567334-b9b3-41a6-b42f-7747b6f9141f to https://uploads.mangadex.org/covers/7258fc1a-70fa-450d-9ee5-b550e8f2c2d3/f87cacd1-1659-421d-a83a-7ca2d90d02fa.jpg
+[RefreshCover] Job refresh-mangadex-7258fc1a-70fa-450d-9ee5-b550e8f2c2d3 completed
+[RefreshCover] Job refresh-mangadex-e09206eb-3b1b-41dd-b16e-1b31ba2c5d92 started
+[RefreshCover] Processing b5aa97f3-f2a7-4f26-8c10-fcc9c22173d2 (e09206eb-3b1b-41dd-b16e-1b31ba2c5d92) from mangadex
+[RefreshCover] Updated cover for cc671933-a2c5-4fbf-97be-b5d65334fd39 to https://uploads.mangadex.org/covers/40a2695a-0fa9-47cb-9c71-daff8cfe2bd4/da89f222-6723-4f79-950d-24f1fc0b8281.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/c369117f-f517-4a49-9f11-7e420a1b2814/23b76e3b-3c28-47d1-b887-e6806632ef2e.png
+[RefreshCover] Job refresh-mangadex-40a2695a-0fa9-47cb-9c71-daff8cfe2bd4 completed
+[RefreshCover] Job refresh-mangadex-a71e9594-6269-447f-99fa-3d4c8e1fff6f started
+[RefreshCover] Processing ae69d313-835e-4a54-9ab4-f89b5054e6c1 (a71e9594-6269-447f-99fa-3d4c8e1fff6f) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/6838fc3d-abc1-45a5-a5e7-23583d4b6eff/912fd9d8-4999-447f-80a7-2ae1419ae6a6.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/fdf9592a-268a-4e83-bd54-9213985d7a2f/b25d7ab8-09e6-42c3-9a53-77b91fa91d27.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/e09206eb-3b1b-41dd-b16e-1b31ba2c5d92/2aaeb8df-cf6f-40d1-ae12-59d8ada7668b.jpg
+[RefreshCover] Updated cover for 88a43260-c323-49ef-a63a-1d80185d1504 to https://uploads.mangadex.org/covers/c369117f-f517-4a49-9f11-7e420a1b2814/23b76e3b-3c28-47d1-b887-e6806632ef2e.png
+[RefreshCover] Job refresh-mangadex-c369117f-f517-4a49-9f11-7e420a1b2814 completed
+[RefreshCover] Job refresh-mangadex-7cddd1ea-50d0-44b7-9090-bc069adf2f90 started
+[RefreshCover] Processing 75e049a7-a6f3-464c-8313-7124dc603a40 (7cddd1ea-50d0-44b7-9090-bc069adf2f90) from mangadex
+[RefreshCover] Updated cover for b6930b48-6299-4e27-8fe3-071f1cb87c5e to https://uploads.mangadex.org/covers/6838fc3d-abc1-45a5-a5e7-23583d4b6eff/912fd9d8-4999-447f-80a7-2ae1419ae6a6.jpg
+[RefreshCover] Job refresh-mangadex-6838fc3d-abc1-45a5-a5e7-23583d4b6eff completed
+[RefreshCover] Job refresh-mangadex-9aca2eec-70b0-4d22-8026-762fc7d66532 started
+[RefreshCover] Processing 762770ee-65de-423f-817d-20e2327b91fa (9aca2eec-70b0-4d22-8026-762fc7d66532) from mangadex
+[RefreshCover] Updated cover for 253c8d9a-19af-4597-a5ac-fa34518e9e43 to https://uploads.mangadex.org/covers/fdf9592a-268a-4e83-bd54-9213985d7a2f/b25d7ab8-09e6-42c3-9a53-77b91fa91d27.jpg
+[RefreshCover] Updated cover for b5aa97f3-f2a7-4f26-8c10-fcc9c22173d2 to https://uploads.mangadex.org/covers/e09206eb-3b1b-41dd-b16e-1b31ba2c5d92/2aaeb8df-cf6f-40d1-ae12-59d8ada7668b.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/a71e9594-6269-447f-99fa-3d4c8e1fff6f/a30e3452-0a69-4ce1-8a01-1e6aa0d6781b.jpg
+[RefreshCover] Job refresh-mangadex-fdf9592a-268a-4e83-bd54-9213985d7a2f completed
+[RefreshCover] Job refresh-mangadex-a9c23586-2f59-445e-aa30-ba9885693f00 started
+[RefreshCover] Processing eca81b8d-b94f-4a91-ac77-a87c2da5e9f2 (a9c23586-2f59-445e-aa30-ba9885693f00) from mangadex
+[RefreshCover] Job refresh-mangadex-e09206eb-3b1b-41dd-b16e-1b31ba2c5d92 completed
+[RefreshCover] Job refresh-mangadex-565882a8-fa45-4d44-8d53-d9a6e788f2e5 started
+[RefreshCover] Processing fa90acbd-a035-4dae-a995-4231067be95d (565882a8-fa45-4d44-8d53-d9a6e788f2e5) from mangadex
+[Scheduler] Cover refresh jobs queued
+[DeferredSearch] Checking for deferred queries...
+[Scheduler] Deferred search scheduler failed: TypeError: client.once is not a function
+    at <anonymous> (/home/user/app/src/lib/redis.ts:181:12)
+    at new Promise (<anonymous>)
+    at waitForRedis (/home/user/app/src/lib/redis.ts:177:10)
+    at getDeferredQueryHashes (/home/user/app/src/lib/search-cache.ts:432:23)
+    at runDeferredSearchScheduler (/home/user/app/src/workers/schedulers/deferred-search.scheduler.ts:36:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/src/workers/schedulers/master.scheduler.ts:93:7)
+    at async withLock (/home/user/app/src/lib/redis.ts:238:12)
+    at async runMasterScheduler (/home/user/app/src/workers/schedulers/master.scheduler.ts:72:10)
+    at async runScheduler (/home/user/app/src/workers/index.ts:251:9)
+[Notification-Digest-Scheduler] Checking for eligible digests...
+[Safety-Monitor] Running health checks...
+[RefreshCover] Updated cover for ae69d313-835e-4a54-9ab4-f89b5054e6c1 to https://uploads.mangadex.org/covers/a71e9594-6269-447f-99fa-3d4c8e1fff6f/a30e3452-0a69-4ce1-8a01-1e6aa0d6781b.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/7cddd1ea-50d0-44b7-9090-bc069adf2f90/74b42529-b512-49a1-8722-f112f0c4c154.jpg
+[RefreshCover] Job refresh-mangadex-a71e9594-6269-447f-99fa-3d4c8e1fff6f completed
+[RefreshCover] Job refresh-mangadex-281d8c21-9f2a-4be9-a461-7a71b8c90185 started
+[RefreshCover] Processing 329203a2-17b2-4bd5-aadf-ac3651188d81 (281d8c21-9f2a-4be9-a461-7a71b8c90185) from mangadex
+[Safety-Monitor] Queue Depths - Free: 0, Premium: 0
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/9aca2eec-70b0-4d22-8026-762fc7d66532/b28613f4-52a9-4ec7-9f96-6db93ae2fa48.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/a9c23586-2f59-445e-aa30-ba9885693f00/edfccbf2-5d87-4f19-a0f1-7c7f7791e5fe.png
+[Workers] Heartbeat sent
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/565882a8-fa45-4d44-8d53-d9a6e788f2e5/b9eb20ab-5c4e-4f9d-b92d-6c787bb5c4f0.png
+[Scheduler] Queuing 500 sources for sync.
+[RefreshCover] Updated cover for 75e049a7-a6f3-464c-8313-7124dc603a40 to https://uploads.mangadex.org/covers/7cddd1ea-50d0-44b7-9090-bc069adf2f90/74b42529-b512-49a1-8722-f112f0c4c154.jpg
+[RefreshCover] Job refresh-mangadex-7cddd1ea-50d0-44b7-9090-bc069adf2f90 completed
+[RefreshCover] Job refresh-mangadex-0612d28f-ab26-4515-98a2-727549b00c19 started
+[RefreshCover] Processing 36c4d962-2668-43ef-bfb6-3d33fe743b3c (0612d28f-ab26-4515-98a2-727549b00c19) from mangadex
+[RefreshCover] Updated cover for 762770ee-65de-423f-817d-20e2327b91fa to https://uploads.mangadex.org/covers/9aca2eec-70b0-4d22-8026-762fc7d66532/b28613f4-52a9-4ec7-9f96-6db93ae2fa48.jpg
+[RefreshCover] Job refresh-mangadex-9aca2eec-70b0-4d22-8026-762fc7d66532 completed
+[RefreshCover] Job refresh-mangadex-52b66415-7dc9-4668-8776-e7354c02406f started
+[RefreshCover] Processing 2e52947b-816a-4305-98b0-0caed6087939 (52b66415-7dc9-4668-8776-e7354c02406f) from mangadex
+[RefreshCover] Updated cover for eca81b8d-b94f-4a91-ac77-a87c2da5e9f2 to https://uploads.mangadex.org/covers/a9c23586-2f59-445e-aa30-ba9885693f00/edfccbf2-5d87-4f19-a0f1-7c7f7791e5fe.png
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/281d8c21-9f2a-4be9-a461-7a71b8c90185/020f1b57-1aec-4181-98e2-f5bdd9e4c092.jpg
+[RefreshCover] Updated cover for fa90acbd-a035-4dae-a995-4231067be95d to https://uploads.mangadex.org/covers/565882a8-fa45-4d44-8d53-d9a6e788f2e5/b9eb20ab-5c4e-4f9d-b92d-6c787bb5c4f0.png
+[RefreshCover] Job refresh-mangadex-a9c23586-2f59-445e-aa30-ba9885693f00 completed
+[RefreshCover] Job refresh-mangadex-565882a8-fa45-4d44-8d53-d9a6e788f2e5 completed
+[Scheduler] Queued 500 jobs, updated next_check_at
+[PollSource] Job sync-035fff73-579c-4732-b362-4aed2c3dbee9 started
+[PollSource][sync-035fff73-579c-4732-b362-4aed2c3dbee9] Starting process for source ID: 035fff73-579c-4732-b362-4aed2c3dbee9
+[RefreshCover] Job refresh-mangadex-43932f22-00da-42ea-b86f-a18c27bf6cef started
+[RefreshCover] Processing b80f445e-4ec2-45ed-9e5a-561601ec8565 (43932f22-00da-42ea-b86f-a18c27bf6cef) from mangadex
+[RefreshCover] Job refresh-mangadex-992d97b9-f57a-483e-9d1c-963109204d5c started
+[RefreshCover] Processing 6349aeef-f172-4dbe-8b77-6d6aab2cb85f (992d97b9-f57a-483e-9d1c-963109204d5c) from mangadex
+[RefreshCover] Updated cover for 329203a2-17b2-4bd5-aadf-ac3651188d81 to https://uploads.mangadex.org/covers/281d8c21-9f2a-4be9-a461-7a71b8c90185/020f1b57-1aec-4181-98e2-f5bdd9e4c092.jpg
+[Workers] Started and listening on dedicated Redis
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/0612d28f-ab26-4515-98a2-727549b00c19/59a76c3f-98fb-420e-849f-606165a82f05.jpg
+[RefreshCover] Job refresh-mangadex-281d8c21-9f2a-4be9-a461-7a71b8c90185 completed
+[RefreshCover] Job refresh-mangadex-8a2823e7-9e4b-42e0-8e2b-0d0f4cef286a started
+[RefreshCover] Processing ff296637-892f-4351-adb8-b377c5ddc43c (8a2823e7-9e4b-42e0-8e2b-0d0f4cef286a) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/52b66415-7dc9-4668-8776-e7354c02406f/bb93ee28-bc6c-493c-ace3-47a03c327c45.jpg
+[PollSource][sync-035fff73-579c-4732-b362-4aed2c3dbee9] Waiting for rate limit token for mangadex...
+[RefreshCover] Updated cover for 36c4d962-2668-43ef-bfb6-3d33fe743b3c to https://uploads.mangadex.org/covers/0612d28f-ab26-4515-98a2-727549b00c19/59a76c3f-98fb-420e-849f-606165a82f05.jpg
+[RefreshCover] Job refresh-mangadex-0612d28f-ab26-4515-98a2-727549b00c19 completed
+[RefreshCover] Job refresh-mangadex-5f82962a-4450-4562-92ef-e06684c3b570 started
+[RefreshCover] Processing 7ddd97f8-d52a-4fea-b110-f65845f6aabe (5f82962a-4450-4562-92ef-e06684c3b570) from mangadex
+[RefreshCover] Updated cover for 2e52947b-816a-4305-98b0-0caed6087939 to https://uploads.mangadex.org/covers/52b66415-7dc9-4668-8776-e7354c02406f/bb93ee28-bc6c-493c-ace3-47a03c327c45.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/992d97b9-f57a-483e-9d1c-963109204d5c/3d5a1e34-d2e9-4ce3-b5a7-f9cd434b8a0e.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/43932f22-00da-42ea-b86f-a18c27bf6cef/54c2608c-f115-4be3-ba2e-056d0caea7ae.jpg
+[RefreshCover] Job refresh-mangadex-52b66415-7dc9-4668-8776-e7354c02406f completed
+[RefreshCover] Job refresh-mangadex-13f3dbaa-8d1e-493d-935a-7dccb06e5792 started
+[RefreshCover] Processing f2bb60bc-b282-41b3-aa68-97302e2fd655 (13f3dbaa-8d1e-493d-935a-7dccb06e5792) from mangadex
+[PollSource][sync-035fff73-579c-4732-b362-4aed2c3dbee9] Polling MangaDex for Kamigami no Kennou wo Ayatsurishi Mono ~Nouryoku Suuchi "0" de Sagesumareteiru Ore da ga, Jitsu wa Sekai Saikyou no Ikkaku~...
+[MangaDex] Fetching sourceId: a04a5fe4-b353-4822-bce7-06fda2986346
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/8a2823e7-9e4b-42e0-8e2b-0d0f4cef286a/da113bfa-058f-4965-acfb-4b62476d256d.png
+[PollSource] Job sync-06e44b21-4d0a-415f-93e7-39108dbad878 started
+[PollSource][sync-06e44b21-4d0a-415f-93e7-39108dbad878] Starting process for source ID: 06e44b21-4d0a-415f-93e7-39108dbad878
+[PollSource] Job sync-19367e60-7552-4cc1-be89-18e20a5ac5de started
+[PollSource][sync-19367e60-7552-4cc1-be89-18e20a5ac5de] Starting process for source ID: 19367e60-7552-4cc1-be89-18e20a5ac5de
+[PollSource] Job sync-27b34c5d-b1e7-46eb-b889-b2f25e0157e0 started
+[PollSource][sync-27b34c5d-b1e7-46eb-b889-b2f25e0157e0] Starting process for source ID: 27b34c5d-b1e7-46eb-b889-b2f25e0157e0
+[PollSource] Job sync-351f2c92-b399-43cb-894c-cc8d25255f9b started
+[PollSource][sync-351f2c92-b399-43cb-894c-cc8d25255f9b] Starting process for source ID: 351f2c92-b399-43cb-894c-cc8d25255f9b
+[PollSource] Job sync-3c3ef31e-ea3e-4a01-b412-b313aaa023d8 started
+[PollSource][sync-3c3ef31e-ea3e-4a01-b412-b313aaa023d8] Starting process for source ID: 3c3ef31e-ea3e-4a01-b412-b313aaa023d8
+[PollSource] Job sync-3e728e8a-eda4-4400-937f-5989d186908b started
+[PollSource][sync-3e728e8a-eda4-4400-937f-5989d186908b] Starting process for source ID: 3e728e8a-eda4-4400-937f-5989d186908b
+[PollSource] Job sync-41f66368-27b6-4bad-8c47-1d12d6269ab0 started
+[PollSource][sync-41f66368-27b6-4bad-8c47-1d12d6269ab0] Starting process for source ID: 41f66368-27b6-4bad-8c47-1d12d6269ab0
+[PollSource] Job sync-48720603-ad97-49c0-b18d-442e250fc1ee started
+[PollSource][sync-48720603-ad97-49c0-b18d-442e250fc1ee] Starting process for source ID: 48720603-ad97-49c0-b18d-442e250fc1ee
+[PollSource] Job sync-5429b88b-a330-4fb3-b483-6d2a2f60e057 started
+[PollSource][sync-5429b88b-a330-4fb3-b483-6d2a2f60e057] Starting process for source ID: 5429b88b-a330-4fb3-b483-6d2a2f60e057
+[RefreshCover] Updated cover for 6349aeef-f172-4dbe-8b77-6d6aab2cb85f to https://uploads.mangadex.org/covers/992d97b9-f57a-483e-9d1c-963109204d5c/3d5a1e34-d2e9-4ce3-b5a7-f9cd434b8a0e.jpg
+[RefreshCover] Updated cover for b80f445e-4ec2-45ed-9e5a-561601ec8565 to https://uploads.mangadex.org/covers/43932f22-00da-42ea-b86f-a18c27bf6cef/54c2608c-f115-4be3-ba2e-056d0caea7ae.jpg
+[RefreshCover] Job refresh-mangadex-992d97b9-f57a-483e-9d1c-963109204d5c completed
+[RefreshCover] Job refresh-mangadex-577469f9-fc50-4e3b-ba38-bccf4138c637 started
+[RefreshCover] Processing 60e9465a-0a43-43b6-a29c-aa58d375dfb6 (577469f9-fc50-4e3b-ba38-bccf4138c637) from mangadex
+[RefreshCover] Job refresh-mangadex-43932f22-00da-42ea-b86f-a18c27bf6cef completed
+[RefreshCover] Job refresh-mangadex-abaeeeb7-c54c-420c-905c-7fff8bc26d74 started
+[RefreshCover] Processing 5262f92a-99eb-4add-9afd-ff78886787da (abaeeeb7-c54c-420c-905c-7fff8bc26d74) from mangadex
+[RefreshCover] Updated cover for ff296637-892f-4351-adb8-b377c5ddc43c to https://uploads.mangadex.org/covers/8a2823e7-9e4b-42e0-8e2b-0d0f4cef286a/da113bfa-058f-4965-acfb-4b62476d256d.png
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/5f82962a-4450-4562-92ef-e06684c3b570/5168a189-8d7e-4eb8-8cef-3ef1c856470e.jpg
+[RefreshCover] Job refresh-mangadex-8a2823e7-9e4b-42e0-8e2b-0d0f4cef286a completed
+[RefreshCover] Job refresh-mangadex-4ab48d44-4f61-4630-886d-fe9cf21f95e3 started
+[RefreshCover] Processing 44d7257b-6960-428a-b5b2-24ce5b604fc2 (4ab48d44-4f61-4630-886d-fe9cf21f95e3) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/13f3dbaa-8d1e-493d-935a-7dccb06e5792/fac20df8-453e-4896-b791-4376838c4d3f.jpg
+[PollSource][sync-06e44b21-4d0a-415f-93e7-39108dbad878] Waiting for rate limit token for mangadex...
+[PollSource][sync-19367e60-7552-4cc1-be89-18e20a5ac5de] Waiting for rate limit token for mangadex...
+[PollSource][sync-27b34c5d-b1e7-46eb-b889-b2f25e0157e0] Waiting for rate limit token for mangadex...
+[PollSource][sync-351f2c92-b399-43cb-894c-cc8d25255f9b] Waiting for rate limit token for mangadex...
+[PollSource][sync-3c3ef31e-ea3e-4a01-b412-b313aaa023d8] Waiting for rate limit token for mangadex...
+[PollSource][sync-3e728e8a-eda4-4400-937f-5989d186908b] Waiting for rate limit token for mangadex...
+[PollSource][sync-41f66368-27b6-4bad-8c47-1d12d6269ab0] Waiting for rate limit token for mangadex...
+[PollSource][sync-48720603-ad97-49c0-b18d-442e250fc1ee] Waiting for rate limit token for mangadex...
+[PollSource][sync-5429b88b-a330-4fb3-b483-6d2a2f60e057] Waiting for rate limit token for mangadex...
+[RefreshCover] Updated cover for 7ddd97f8-d52a-4fea-b110-f65845f6aabe to https://uploads.mangadex.org/covers/5f82962a-4450-4562-92ef-e06684c3b570/5168a189-8d7e-4eb8-8cef-3ef1c856470e.jpg
+[PollSource][sync-06e44b21-4d0a-415f-93e7-39108dbad878] Polling MangaDex for Henkyou no Nouson de Boku wa Mahou de Asobu...
+[MangaDex] Fetching sourceId: 752ef485-1b42-46d7-8280-2c5a1b6515bd
+[PollSource][sync-19367e60-7552-4cc1-be89-18e20a5ac5de] Polling MangaDex for Tensei Yuusha no Kimama Tabi...
+[MangaDex] Fetching sourceId: 513f6b0e-129a-4490-af7d-cdbda7406b23
+[PollSource][sync-27b34c5d-b1e7-46eb-b889-b2f25e0157e0] Polling MangaDex for Skill "Shokuju" wo Tsukatte Tsuihou-saki de Nonbiri Kaitaku Hajimemasu...
+[MangaDex] Fetching sourceId: 430abf07-046d-4a8e-aed2-8a77024c5ba6
+[PollSource][sync-351f2c92-b399-43cb-894c-cc8d25255f9b] Polling MangaDex for The Mad Dog of the Duke’s Estate...
+[MangaDex] Fetching sourceId: 2e7dbf7a-7ec8-4ac7-a2cd-a6cc8dc8129b
+[PollSource][sync-3c3ef31e-ea3e-4a01-b412-b313aaa023d8] Polling MangaDex for Clouren-ke no Jinan...
+[MangaDex] Fetching sourceId: 2f0262f8-5cef-4773-9310-4a76e806174e
+[PollSource][sync-3e728e8a-eda4-4400-937f-5989d186908b] Polling MangaDex for What a Bountiful Harvest, Demon Lord!...
+[MangaDex] Fetching sourceId: 15ab4953-66b2-4030-bfd1-498389484191
+[PollSource][sync-41f66368-27b6-4bad-8c47-1d12d6269ab0] Polling MangaDex for Saikyou Ansatsusha, Class Ten'i de Isekai e...
+[MangaDex] Fetching sourceId: 027fb975-de7d-491b-b0ad-d91f8faee198
+[PollSource] Job sync-035fff73-579c-4732-b362-4aed2c3dbee9 completed
+[RefreshCover] Job refresh-mangadex-5f82962a-4450-4562-92ef-e06684c3b570 completed
+[RefreshCover] Job refresh-mangadex-1c8474c2-677e-443c-b249-a943dac671de started
+[RefreshCover] Processing dd369fb1-cc76-4221-b312-dd5837ecf408 (1c8474c2-677e-443c-b249-a943dac671de) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/577469f9-fc50-4e3b-ba38-bccf4138c637/cf97b346-662f-4a61-a079-feffb3e6a91d.jpg
+[RefreshCover] Updated cover for f2bb60bc-b282-41b3-aa68-97302e2fd655 to https://uploads.mangadex.org/covers/13f3dbaa-8d1e-493d-935a-7dccb06e5792/fac20df8-453e-4896-b791-4376838c4d3f.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/abaeeeb7-c54c-420c-905c-7fff8bc26d74/8d0dd127-fc32-4a0d-8275-89e3dd45231c.jpg
+[RefreshCover] Job refresh-mangadex-13f3dbaa-8d1e-493d-935a-7dccb06e5792 completed
+[RefreshCover] Job refresh-mangadex-ab8a4653-f4ed-4a99-bce5-e4b0f1a61757 started
+[RefreshCover] Processing 61b6ed9c-0261-400e-b639-84565a4918ac (ab8a4653-f4ed-4a99-bce5-e4b0f1a61757) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/4ab48d44-4f61-4630-886d-fe9cf21f95e3/abca9cc5-c40b-44de-a15f-c8465990444f.jpg
+[PollSource][sync-48720603-ad97-49c0-b18d-442e250fc1ee] Polling MangaDex for Level Gacha ~Hazure Status "Un" ga Kekkyoku Ichiban Juuyoudatta Ken~...
+[MangaDex] Fetching sourceId: 5c85006e-69fa-4e70-b426-efcbf84b5508
+[PollSource] Job sync-5c0c7ba3-7ec3-4f6f-ae87-eff7834a7f37 started
+[PollSource][sync-5c0c7ba3-7ec3-4f6f-ae87-eff7834a7f37] Starting process for source ID: 5c0c7ba3-7ec3-4f6f-ae87-eff7834a7f37
+[PollSource] Job sync-685947a6-7e0d-44ee-b47d-cba4b5515c0c started
+[PollSource][sync-685947a6-7e0d-44ee-b47d-cba4b5515c0c] Starting process for source ID: 685947a6-7e0d-44ee-b47d-cba4b5515c0c
+[PollSource] Job sync-7058a9a4-96f6-41b1-9bcc-f0e84639790d started
+[PollSource][sync-7058a9a4-96f6-41b1-9bcc-f0e84639790d] Starting process for source ID: 7058a9a4-96f6-41b1-9bcc-f0e84639790d
+[PollSource] Job sync-764b2f63-5935-49da-829e-0f3adedfc6a1 started
+[PollSource][sync-764b2f63-5935-49da-829e-0f3adedfc6a1] Starting process for source ID: 764b2f63-5935-49da-829e-0f3adedfc6a1
+[PollSource] Job sync-7f53d630-654b-4e11-8e3a-c25178d1dcd7 started
+[PollSource][sync-7f53d630-654b-4e11-8e3a-c25178d1dcd7] Starting process for source ID: 7f53d630-654b-4e11-8e3a-c25178d1dcd7
+[PollSource] Job sync-8ab2330b-e65d-4c2e-b821-d872c8a2af0f started
+[PollSource][sync-8ab2330b-e65d-4c2e-b821-d872c8a2af0f] Starting process for source ID: 8ab2330b-e65d-4c2e-b821-d872c8a2af0f
+[PollSource] Job sync-8c158218-ac43-4ad7-8767-b7d15d3e18ac started
+[PollSource][sync-8c158218-ac43-4ad7-8767-b7d15d3e18ac] Starting process for source ID: 8c158218-ac43-4ad7-8767-b7d15d3e18ac
+[PollSource] Job sync-8c596c3d-0213-4812-a610-49900f382235 started
+[PollSource][sync-8c596c3d-0213-4812-a610-49900f382235] Starting process for source ID: 8c596c3d-0213-4812-a610-49900f382235
+[PollSource] Job sync-8e96195a-cef6-43e4-82b0-10620314c6db started
+[PollSource][sync-8e96195a-cef6-43e4-82b0-10620314c6db] Starting process for source ID: 8e96195a-cef6-43e4-82b0-10620314c6db
+[PollSource] Job sync-8f92f914-a7b5-4b3b-9236-ef8d3f766e18 started
+[PollSource][sync-8f92f914-a7b5-4b3b-9236-ef8d3f766e18] Starting process for source ID: 8f92f914-a7b5-4b3b-9236-ef8d3f766e18
+[RefreshCover] Updated cover for 60e9465a-0a43-43b6-a29c-aa58d375dfb6 to https://uploads.mangadex.org/covers/577469f9-fc50-4e3b-ba38-bccf4138c637/cf97b346-662f-4a61-a079-feffb3e6a91d.jpg
+[RefreshCover] Job refresh-mangadex-577469f9-fc50-4e3b-ba38-bccf4138c637 completed
+[RefreshCover] Job refresh-mangadex-7940131d-efb2-44e8-8c1f-abf554b6255e started
+[RefreshCover] Processing 358ec9a8-748e-4f61-af18-20d0331edaa2 (7940131d-efb2-44e8-8c1f-abf554b6255e) from mangadex
+[RefreshCover] Updated cover for 5262f92a-99eb-4add-9afd-ff78886787da to https://uploads.mangadex.org/covers/abaeeeb7-c54c-420c-905c-7fff8bc26d74/8d0dd127-fc32-4a0d-8275-89e3dd45231c.jpg
+[RefreshCover] Job refresh-mangadex-abaeeeb7-c54c-420c-905c-7fff8bc26d74 completed
+[RefreshCover] Job refresh-mangadex-9498de5f-d922-4c35-8590-055e6110a557 started
+[RefreshCover] Processing 7ac351d5-e71a-4aec-b7c9-f6ba1275e6be (9498de5f-d922-4c35-8590-055e6110a557) from mangadex
+[RefreshCover] Updated cover for 44d7257b-6960-428a-b5b2-24ce5b604fc2 to https://uploads.mangadex.org/covers/4ab48d44-4f61-4630-886d-fe9cf21f95e3/abca9cc5-c40b-44de-a15f-c8465990444f.jpg
+[PollSource] Job sync-9a086399-84f8-4ba6-92c9-9a53ea3bfcef started
+[PollSource][sync-9a086399-84f8-4ba6-92c9-9a53ea3bfcef] Starting process for source ID: 9a086399-84f8-4ba6-92c9-9a53ea3bfcef
+[PollSource][sync-5429b88b-a330-4fb3-b483-6d2a2f60e057] Polling MangaDex for Tsuihou Sareta Tensei Ouji, "Auto Craft" Skill de Ryouchi wo Bakusoku de Kaitakushi Saikyou no Mura wo Tsukutteshimau ~Saikyou Crafting Skill de Hajimeru, Rakuraku Ryouchi Kaitaku Slow Life~...
+[MangaDex] Fetching sourceId: 082d6154-42ab-4d5c-9dfa-d4a6526b7aa8
+[RefreshCover] Job refresh-mangadex-4ab48d44-4f61-4630-886d-fe9cf21f95e3 completed
+[RefreshCover] Job refresh-mangadex-c33f6c5e-9515-476d-b66c-49481d024f47 started
+[RefreshCover] Processing fff9d62b-6cac-4b51-9026-08d29ff09b5a (c33f6c5e-9515-476d-b66c-49481d024f47) from mangadex
+[PollSource][sync-5c0c7ba3-7ec3-4f6f-ae87-eff7834a7f37] Waiting for rate limit token for mangadex...
+[PollSource][sync-685947a6-7e0d-44ee-b47d-cba4b5515c0c] Waiting for rate limit token for mangadex...
+[PollSource][sync-7058a9a4-96f6-41b1-9bcc-f0e84639790d] Waiting for rate limit token for mangadex...
+[PollSource][sync-764b2f63-5935-49da-829e-0f3adedfc6a1] Waiting for rate limit token for mangadex...
+[PollSource][sync-7f53d630-654b-4e11-8e3a-c25178d1dcd7] Waiting for rate limit token for mangadex...
+[PollSource][sync-8ab2330b-e65d-4c2e-b821-d872c8a2af0f] Waiting for rate limit token for mangadex...
+[PollSource][sync-8c158218-ac43-4ad7-8767-b7d15d3e18ac] Waiting for rate limit token for mangadex...
+[PollSource][sync-8c596c3d-0213-4812-a610-49900f382235] Waiting for rate limit token for mangadex...
+[PollSource][sync-8e96195a-cef6-43e4-82b0-10620314c6db] Waiting for rate limit token for mangadex...
+[PollSource][sync-8f92f914-a7b5-4b3b-9236-ef8d3f766e18] Waiting for rate limit token for mangadex...
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/1c8474c2-677e-443c-b249-a943dac671de/0cf3d6b4-ac36-42e3-a91b-b92455fd9432.jpg
+[PollSource] Job sync-41f66368-27b6-4bad-8c47-1d12d6269ab0 completed
+[PollSource] Job sync-ae9c5ad3-9834-4bd3-9ede-b9ee1ebb0774 started
+[PollSource][sync-ae9c5ad3-9834-4bd3-9ede-b9ee1ebb0774] Starting process for source ID: ae9c5ad3-9834-4bd3-9ede-b9ee1ebb0774
+[PollSource] Job sync-351f2c92-b399-43cb-894c-cc8d25255f9b completed
+[PollSource] Job sync-c45a49bc-efd3-45cd-a6aa-73fcf93ac9a0 started
+[PollSource][sync-c45a49bc-efd3-45cd-a6aa-73fcf93ac9a0] Starting process for source ID: c45a49bc-efd3-45cd-a6aa-73fcf93ac9a0
+[PollSource] Job sync-3e728e8a-eda4-4400-937f-5989d186908b completed
+[PollSource] Job sync-c8452c49-d000-4aa3-9fa1-b6c8a073ac7b started
+[PollSource][sync-c8452c49-d000-4aa3-9fa1-b6c8a073ac7b] Starting process for source ID: c8452c49-d000-4aa3-9fa1-b6c8a073ac7b
+[PollSource] Job sync-3c3ef31e-ea3e-4a01-b412-b313aaa023d8 completed
+[PollSource] Job sync-cb7e5bd8-47a4-49bd-afad-41d7ed8331d8 started
+[PollSource][sync-cb7e5bd8-47a4-49bd-afad-41d7ed8331d8] Starting process for source ID: cb7e5bd8-47a4-49bd-afad-41d7ed8331d8
+[PollSource] Job sync-27b34c5d-b1e7-46eb-b889-b2f25e0157e0 completed
+[PollSource] Job sync-001ce55a-a429-4f27-9488-b064d6157d5b started
+[PollSource][sync-001ce55a-a429-4f27-9488-b064d6157d5b] Starting process for source ID: 001ce55a-a429-4f27-9488-b064d6157d5b
+[PollSource] Job sync-19367e60-7552-4cc1-be89-18e20a5ac5de completed
+[PollSource] Job sync-0233af84-ea73-4996-b837-ceea4d9edb18 started
+[PollSource][sync-0233af84-ea73-4996-b837-ceea4d9edb18] Starting process for source ID: 0233af84-ea73-4996-b837-ceea4d9edb18
+[PollSource] Job sync-06e44b21-4d0a-415f-93e7-39108dbad878 completed
+[PollSource] Job sync-033554d2-9f8e-44c7-8bcc-9a941ea8ba46 started
+[PollSource][sync-033554d2-9f8e-44c7-8bcc-9a941ea8ba46] Starting process for source ID: 033554d2-9f8e-44c7-8bcc-9a941ea8ba46
+[PollSource] Job sync-48720603-ad97-49c0-b18d-442e250fc1ee completed
+[PollSource] Job sync-049ced48-202b-4123-a77e-e9094f33e650 started
+[PollSource][sync-049ced48-202b-4123-a77e-e9094f33e650] Starting process for source ID: 049ced48-202b-4123-a77e-e9094f33e650
+[PollSource][sync-9a086399-84f8-4ba6-92c9-9a53ea3bfcef] Waiting for rate limit token for mangadex...
+[RefreshCover] Updated cover for dd369fb1-cc76-4221-b312-dd5837ecf408 to https://uploads.mangadex.org/covers/1c8474c2-677e-443c-b249-a943dac671de/0cf3d6b4-ac36-42e3-a91b-b92455fd9432.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/7940131d-efb2-44e8-8c1f-abf554b6255e/98a2d501-eea4-4d9c-8d42-7fe38ee48fe1.png
+[PollSource][sync-ae9c5ad3-9834-4bd3-9ede-b9ee1ebb0774] Waiting for rate limit token for mangadex...
+[PollSource][sync-c45a49bc-efd3-45cd-a6aa-73fcf93ac9a0] Waiting for rate limit token for mangadex...
+[RefreshCover] Job refresh-mangadex-1c8474c2-677e-443c-b249-a943dac671de completed
+[RefreshCover] Job refresh-mangadex-4a5f641a-a66f-455a-9aa4-aeaf27f3d8b3 started
+[RefreshCover] Processing 26fa0194-aaf4-49a7-a006-c855926ee33c (4a5f641a-a66f-455a-9aa4-aeaf27f3d8b3) from mangadex
+[PollSource][sync-c8452c49-d000-4aa3-9fa1-b6c8a073ac7b] Waiting for rate limit token for mangadex...
+[PollSource][sync-cb7e5bd8-47a4-49bd-afad-41d7ed8331d8] Waiting for rate limit token for mangadex...
+[PollSource][sync-001ce55a-a429-4f27-9488-b064d6157d5b] Waiting for rate limit token for mangadex...
+[PollSource][sync-764b2f63-5935-49da-829e-0f3adedfc6a1] Polling MangaDex for SSS-kyuu Skill Haifu Shinkan no Henkyou Second Life ~Sasen Saki no Murabito-tachi ni Aisare Nagara Saikou no Mura wo Tsukurimasu!~...
+[MangaDex] Fetching sourceId: 5ee853ad-e777-4bd6-ba6a-27fcd6d067de
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/c33f6c5e-9515-476d-b66c-49481d024f47/13cfcacf-f85e-43f8-b843-18438b6b92c2.jpg
+[PollSource][sync-0233af84-ea73-4996-b837-ceea4d9edb18] Waiting for rate limit token for mangadex...
+[PollSource][sync-033554d2-9f8e-44c7-8bcc-9a941ea8ba46] Waiting for rate limit token for mangadex...
+[PollSource][sync-049ced48-202b-4123-a77e-e9094f33e650] Waiting for rate limit token for mangadex...
+[PollSource][sync-7f53d630-654b-4e11-8e3a-c25178d1dcd7] Polling MangaDex for Choujin Koukousei-tachi wa Isekai demo Yoyuu de Ikinuku you desu!...
+[MangaDex] Fetching sourceId: 94b85b77-a2a9-4ffb-bb5e-c3bfa6a3c48d
+[PollSource] Job sync-5429b88b-a330-4fb3-b483-6d2a2f60e057 completed
+[PollSource] Job sync-04a9604d-c60a-4473-893d-27a61c7341b7 started
+[PollSource][sync-04a9604d-c60a-4473-893d-27a61c7341b7] Starting process for source ID: 04a9604d-c60a-4473-893d-27a61c7341b7
+[RefreshCover] Updated cover for 358ec9a8-748e-4f61-af18-20d0331edaa2 to https://uploads.mangadex.org/covers/7940131d-efb2-44e8-8c1f-abf554b6255e/98a2d501-eea4-4d9c-8d42-7fe38ee48fe1.png
+[RefreshCover] Job refresh-mangadex-7940131d-efb2-44e8-8c1f-abf554b6255e completed
+[RefreshCover] Job refresh-mangadex-9fa94f7e-0878-42b5-b391-11983cea99d9 started
+[RefreshCover] Processing 986a58c4-36cc-433d-a841-05d5b370963f (9fa94f7e-0878-42b5-b391-11983cea99d9) from mangadex
+[PollSource][sync-0233af84-ea73-4996-b837-ceea4d9edb18] Polling MangaDex for Kinzoku Slime wo Taoshi Makutta Ore ga "Kurokou no Ou" to Yobareru Made...
+[MangaDex] Fetching sourceId: 2bcd3dc6-b6a1-45bb-bd53-84fa9c9198df
+[RefreshCover] Updated cover for fff9d62b-6cac-4b51-9026-08d29ff09b5a to https://uploads.mangadex.org/covers/c33f6c5e-9515-476d-b66c-49481d024f47/13cfcacf-f85e-43f8-b843-18438b6b92c2.jpg
+[RefreshCover] Job refresh-mangadex-c33f6c5e-9515-476d-b66c-49481d024f47 completed
+[RefreshCover] Job refresh-mangadex-153e1781-13c5-4a23-b6d9-f5e43f59e361 started
+[RefreshCover] Processing ba43c8b1-5753-4d62-a3ae-ad884938c314 (153e1781-13c5-4a23-b6d9-f5e43f59e361) from mangadex
+[PollSource][sync-04a9604d-c60a-4473-893d-27a61c7341b7] Waiting for rate limit token for mangadex...
+[PollSource][sync-8ab2330b-e65d-4c2e-b821-d872c8a2af0f] Polling MangaDex for Ura Kagyou Tensei ~Moto Gokudou ga Kazoku no Tame ni Ryouchi Hatten Sasemasu ga Nani ka?~...
+[MangaDex] Fetching sourceId: 9c95bc59-f392-4802-8d31-e5f312f1d97e
+[PollSource] Job sync-764b2f63-5935-49da-829e-0f3adedfc6a1 completed
+[PollSource] Job sync-04e9a676-d391-402c-8c94-30c266a847ef started
+[PollSource][sync-04e9a676-d391-402c-8c94-30c266a847ef] Starting process for source ID: 04e9a676-d391-402c-8c94-30c266a847ef
+[PollSource] Job sync-7f53d630-654b-4e11-8e3a-c25178d1dcd7 completed
+[PollSource] Job sync-05727bea-90aa-4212-99f0-02c2c7e97a79 started
+[PollSource][sync-05727bea-90aa-4212-99f0-02c2c7e97a79] Starting process for source ID: 05727bea-90aa-4212-99f0-02c2c7e97a79
+[PollSource][sync-0233af84-ea73-4996-b837-ceea4d9edb18] Error polling source 0233af84-ea73-4996-b837-ceea4d9edb18: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-8c158218-ac43-4ad7-8767-b7d15d3e18ac] Polling MangaDex for Kamitachi ni Hirowareta Otoko...
+[MangaDex] Fetching sourceId: 4187856d-65a9-4fb4-98ec-84c0bf16631f
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/153e1781-13c5-4a23-b6d9-f5e43f59e361/224e1222-fe10-42b1-a6e9-682104f682c5.jpg
+[PollSource][sync-04e9a676-d391-402c-8c94-30c266a847ef] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-0233af84-ea73-4996-b837-ceea4d9edb18 failed: Custom Id cannot contain :
+[PollSource][sync-04a9604d-c60a-4473-893d-27a61c7341b7] Polling MangaDex for The SSS-Rank Hunter's Lucky Draw...
+[PollSource][sync-04a9604d-c60a-4473-893d-27a61c7341b7] Error polling source 04a9604d-c60a-4473-893d-27a61c7341b7: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-059105b6-6647-4651-ab2c-442c81413de4 started
+[PollSource][sync-059105b6-6647-4651-ab2c-442c81413de4] Starting process for source ID: 059105b6-6647-4651-ab2c-442c81413de4
+[PollSource][sync-05727bea-90aa-4212-99f0-02c2c7e97a79] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-8ab2330b-e65d-4c2e-b821-d872c8a2af0f completed
+[PollSource] Job sync-093c73c9-8e40-4932-99cf-141214d809ff started
+[PollSource][sync-093c73c9-8e40-4932-99cf-141214d809ff] Starting process for source ID: 093c73c9-8e40-4932-99cf-141214d809ff
+[PollSource] Job sync-04a9604d-c60a-4473-893d-27a61c7341b7 completed
+[PollSource] Job sync-0a85035a-e1a0-47fb-8251-888f85c82adb started
+[PollSource][sync-0a85035a-e1a0-47fb-8251-888f85c82adb] Starting process for source ID: 0a85035a-e1a0-47fb-8251-888f85c82adb
+[PollSource][sync-8c596c3d-0213-4812-a610-49900f382235] Polling MangaDex for Ubau Mono Ubawareru Mono (2024)...
+[MangaDex] Fetching sourceId: 439a65e5-5eda-41ab-93aa-28893c52b192
+[RefreshCover] Updated cover for ba43c8b1-5753-4d62-a3ae-ad884938c314 to https://uploads.mangadex.org/covers/153e1781-13c5-4a23-b6d9-f5e43f59e361/224e1222-fe10-42b1-a6e9-682104f682c5.jpg
+[RefreshCover] Job refresh-mangadex-153e1781-13c5-4a23-b6d9-f5e43f59e361 completed
+[RefreshCover] Job refresh-mangadex-19a8fcc3-3493-4a9d-97ba-b308fbb0f0e6 started
+[RefreshCover] Processing fb3167eb-68d9-499e-b7bb-e134da5d0baf (19a8fcc3-3493-4a9d-97ba-b308fbb0f0e6) from mangadex
+[Workers] Heartbeat sent
+[PollSource][sync-5c0c7ba3-7ec3-4f6f-ae87-eff7834a7f37] Polling MangaDex for Majutsu Guild Sousui ~Umarekawatte Imasara Yarinaosu Nidome no Gakuin Seikatsu~...
+[MangaDex] Fetching sourceId: c20003ed-d20d-458a-b8a9-918fb4d9c720
+[PollSource][sync-059105b6-6647-4651-ab2c-442c81413de4] Waiting for rate limit token for mangadex...
+[PollSource][sync-093c73c9-8e40-4932-99cf-141214d809ff] Waiting for rate limit token for mangadex...
+[PollSource][sync-0a85035a-e1a0-47fb-8251-888f85c82adb] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-8c158218-ac43-4ad7-8767-b7d15d3e18ac completed
+[PollSource] Job sync-0b872bc0-1e95-445a-bd76-908db7b53e3c started
+[PollSource][sync-0b872bc0-1e95-445a-bd76-908db7b53e3c] Starting process for source ID: 0b872bc0-1e95-445a-bd76-908db7b53e3c
+[PollSource][sync-059105b6-6647-4651-ab2c-442c81413de4] Polling MangaDex for Ouke kara Tsuihou Sareta Ore, Mamono Habikoru Mori de Chousoku Level Up Shimasu: Saijaku Skill to Baka ni Sareta “Kantei” no Shoutai wa, Subete wo Mitousu “Kami no Me” deshita...
+[PollSource][sync-059105b6-6647-4651-ab2c-442c81413de4] Error polling source 059105b6-6647-4651-ab2c-442c81413de4: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/19a8fcc3-3493-4a9d-97ba-b308fbb0f0e6/66e0495e-179d-440b-9e29-3a8b6f4df7df.png
+[PollSource] Job sync-059105b6-6647-4651-ab2c-442c81413de4 completed
+[PollSource] Job sync-0b9767fb-f58e-4ef0-861e-7a2a3250fb51 started
+[PollSource][sync-0b9767fb-f58e-4ef0-861e-7a2a3250fb51] Starting process for source ID: 0b9767fb-f58e-4ef0-861e-7a2a3250fb51
+[PollSource] Job sync-8c596c3d-0213-4812-a610-49900f382235 completed
+[PollSource] Job sync-0d328105-a132-4371-bad4-01c9c17b08cd started
+[PollSource][sync-0d328105-a132-4371-bad4-01c9c17b08cd] Starting process for source ID: 0d328105-a132-4371-bad4-01c9c17b08cd
+[PollSource][sync-05727bea-90aa-4212-99f0-02c2c7e97a79] Polling MangaDex for Trash of the Count's Family...
+[PollSource][sync-05727bea-90aa-4212-99f0-02c2c7e97a79] Error polling source 05727bea-90aa-4212-99f0-02c2c7e97a79: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-0b872bc0-1e95-445a-bd76-908db7b53e3c] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-05727bea-90aa-4212-99f0-02c2c7e97a79 completed
+[PollSource] Job sync-0d5f7f22-d182-4ef7-999b-cba1c5d6dfab started
+[PollSource][sync-0d5f7f22-d182-4ef7-999b-cba1c5d6dfab] Starting process for source ID: 0d5f7f22-d182-4ef7-999b-cba1c5d6dfab
+[PollSource][sync-8e96195a-cef6-43e4-82b0-10620314c6db] Polling MangaDex for Tsuihousareta Fuyo Mahoutsukai no Nariagari ~Yuusha Party wo Kage kara Sasaeteita to Shiranakatta node Modotte Koi? "Kensei" to "Kenja" no Bishoujo-tachi ni Kakomarete Shiawase nano de Modorimasen~...
+[MangaDex] Fetching sourceId: fbba414e-3325-4cde-bdda-a77c705db561
+[RefreshCover] Updated cover for fb3167eb-68d9-499e-b7bb-e134da5d0baf to https://uploads.mangadex.org/covers/19a8fcc3-3493-4a9d-97ba-b308fbb0f0e6/66e0495e-179d-440b-9e29-3a8b6f4df7df.png
+[PollSource] Job sync-5c0c7ba3-7ec3-4f6f-ae87-eff7834a7f37 completed
+[PollSource] Job sync-0d6b58b3-acda-446c-9178-bdc051d3291f started
+[PollSource][sync-0d6b58b3-acda-446c-9178-bdc051d3291f] Starting process for source ID: 0d6b58b3-acda-446c-9178-bdc051d3291f
+[RefreshCover] Job refresh-mangadex-19a8fcc3-3493-4a9d-97ba-b308fbb0f0e6 completed
+[RefreshCover] Job refresh-mangadex-c840c25d-379b-468c-8317-a1a1416d00bd started
+[RefreshCover] Processing 18b95f0e-a076-4359-8f88-2fb4da4920b8 (c840c25d-379b-468c-8317-a1a1416d00bd) from mangadex
+[PollSource][sync-0b9767fb-f58e-4ef0-861e-7a2a3250fb51] Waiting for rate limit token for mangadex...
+[PollSource][sync-0d328105-a132-4371-bad4-01c9c17b08cd] Waiting for rate limit token for mangadex...
+[PollSource][sync-8f92f914-a7b5-4b3b-9236-ef8d3f766e18] Polling MangaDex for The Weakest Occupation "Blacksmith," but It's Actually the Strongest...
+[MangaDex] Fetching sourceId: 17b3b648-fd89-4a69-9a42-6068ffbfa7a7
+[PollSource][sync-0d5f7f22-d182-4ef7-999b-cba1c5d6dfab] Waiting for rate limit token for mangadex...
+[PollSource][sync-0d6b58b3-acda-446c-9178-bdc051d3291f] Waiting for rate limit token for mangadex...
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/c840c25d-379b-468c-8317-a1a1416d00bd/d2961264-dd6c-40c1-a335-1e75072d3a7d.jpg
+[PollSource][sync-0d6b58b3-acda-446c-9178-bdc051d3291f] Polling MangaDex for 100 no Maseki no Daikenja...
+[PollSource][sync-0d6b58b3-acda-446c-9178-bdc051d3291f] Error polling source 0d6b58b3-acda-446c-9178-bdc051d3291f: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-8e96195a-cef6-43e4-82b0-10620314c6db completed
+[PollSource] Job sync-0d849027-19d7-433c-a215-ad55bbcddefc started
+[PollSource][sync-0d849027-19d7-433c-a215-ad55bbcddefc] Starting process for source ID: 0d849027-19d7-433c-a215-ad55bbcddefc
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/9498de5f-d922-4c35-8590-055e6110a557/2b6ea463-97aa-4ae7-9a69-0808cde9a5b0.jpg
+[PollSource] Job sync-0d6b58b3-acda-446c-9178-bdc051d3291f completed
+[PollSource] Job sync-0d872589-0c40-47f7-a0fe-745d66f8b6d4 started
+[PollSource][sync-0d872589-0c40-47f7-a0fe-745d66f8b6d4] Starting process for source ID: 0d872589-0c40-47f7-a0fe-745d66f8b6d4
+[PollSource] Job sync-8f92f914-a7b5-4b3b-9236-ef8d3f766e18 completed
+[PollSource] Job sync-0f3716b2-1d91-4f2d-884d-d37d4be650f0 started
+[PollSource][sync-0f3716b2-1d91-4f2d-884d-d37d4be650f0] Starting process for source ID: 0f3716b2-1d91-4f2d-884d-d37d4be650f0
+[PollSource][sync-c45a49bc-efd3-45cd-a6aa-73fcf93ac9a0] Polling MangaDex for The Reincarnated Assassin Is a Swordmaster...
+[MangaDex] Fetching sourceId: e024f80e-b849-49d2-a032-da7dd8a3825c
+[RefreshCover] Updated cover for 18b95f0e-a076-4359-8f88-2fb4da4920b8 to https://uploads.mangadex.org/covers/c840c25d-379b-468c-8317-a1a1416d00bd/d2961264-dd6c-40c1-a335-1e75072d3a7d.jpg
+[RefreshCover] Job refresh-mangadex-c840c25d-379b-468c-8317-a1a1416d00bd completed
+[RefreshCover] Job refresh-mangadex-8c1fae54-f7d1-47ea-99d7-162a1365e09b started
+[RefreshCover] Processing 3455b45e-4297-418d-aa7d-8c636a8a7645 (8c1fae54-f7d1-47ea-99d7-162a1365e09b) from mangadex
+[PollSource][sync-0d849027-19d7-433c-a215-ad55bbcddefc] Waiting for rate limit token for mangadex...
+[PollSource][sync-0b9767fb-f58e-4ef0-861e-7a2a3250fb51] Polling MangaDex for Heroic Chronicles of the Three Continents...
+[PollSource][sync-0b9767fb-f58e-4ef0-861e-7a2a3250fb51] Error polling source 0b9767fb-f58e-4ef0-861e-7a2a3250fb51: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[RefreshCover] Updated cover for 7ac351d5-e71a-4aec-b7c9-f6ba1275e6be to https://uploads.mangadex.org/covers/9498de5f-d922-4c35-8590-055e6110a557/2b6ea463-97aa-4ae7-9a69-0808cde9a5b0.jpg
+[PollSource][sync-0d872589-0c40-47f7-a0fe-745d66f8b6d4] Waiting for rate limit token for mangadex...
+[PollSource][sync-0f3716b2-1d91-4f2d-884d-d37d4be650f0] Waiting for rate limit token for mangadex...
+[RefreshCover] Job refresh-mangadex-9498de5f-d922-4c35-8590-055e6110a557 completed
+[RefreshCover] Job refresh-mangadex-2dab66cc-f819-4ac4-8566-717331348f4b started
+[RefreshCover] Processing 41713032-42b8-4420-9137-1bca306b7244 (2dab66cc-f819-4ac4-8566-717331348f4b) from mangadex
+[PollSource] Job sync-0b9767fb-f58e-4ef0-861e-7a2a3250fb51 completed
+[PollSource] Job sync-0fc0cddc-600d-4011-b9c0-ba456748a626 started
+[PollSource][sync-0fc0cddc-600d-4011-b9c0-ba456748a626] Starting process for source ID: 0fc0cddc-600d-4011-b9c0-ba456748a626
+[PollSource][sync-9a086399-84f8-4ba6-92c9-9a53ea3bfcef] Polling MangaDex for The Regressed Demon Lord Is Kind...
+[MangaDex] Fetching sourceId: ad65d0cb-30ee-47f0-acb8-8fbec89f132c
+[PollSource][sync-0fc0cddc-600d-4011-b9c0-ba456748a626] Waiting for rate limit token for mangadex...
+[PollSource][sync-0a85035a-e1a0-47fb-8251-888f85c82adb] Polling MangaDex for Shikkoku Tsukai no Saikyou Yuusha...
+[PollSource][sync-0a85035a-e1a0-47fb-8251-888f85c82adb] Error polling source 0a85035a-e1a0-47fb-8251-888f85c82adb: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-c45a49bc-efd3-45cd-a6aa-73fcf93ac9a0 completed
+[PollSource] Job sync-1250684c-54f0-427b-8e24-a102bbfbf2ca started
+[PollSource][sync-1250684c-54f0-427b-8e24-a102bbfbf2ca] Starting process for source ID: 1250684c-54f0-427b-8e24-a102bbfbf2ca
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/4a5f641a-a66f-455a-9aa4-aeaf27f3d8b3/be91493c-a652-4db6-a2fe-575746cce3dd.png
+[PollSource] Job sync-0a85035a-e1a0-47fb-8251-888f85c82adb completed
+[PollSource] Job sync-13e280d3-eade-4aaf-9aa8-398078959ec9 started
+[PollSource][sync-13e280d3-eade-4aaf-9aa8-398078959ec9] Starting process for source ID: 13e280d3-eade-4aaf-9aa8-398078959ec9
+[PollSource][sync-cb7e5bd8-47a4-49bd-afad-41d7ed8331d8] Polling MangaDex for Why I Quit Being The Demon King...
+[MangaDex] Fetching sourceId: eee68d43-9d0b-4c72-90f0-8210c86f7c87
+[PollSource] Job sync-9a086399-84f8-4ba6-92c9-9a53ea3bfcef completed
+[PollSource] Job sync-14224e68-50ec-407b-8e5e-d68a79debf1a started
+[PollSource][sync-14224e68-50ec-407b-8e5e-d68a79debf1a] Starting process for source ID: 14224e68-50ec-407b-8e5e-d68a79debf1a
+[PollSource][sync-001ce55a-a429-4f27-9488-b064d6157d5b] Polling MangaDex for The Reincarnated Dimensional Mage Wants to Stand Out While Keeping His Identity Hidden...
+[PollSource][sync-001ce55a-a429-4f27-9488-b064d6157d5b] Error polling source 001ce55a-a429-4f27-9488-b064d6157d5b: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[RefreshCover] Updated cover for 26fa0194-aaf4-49a7-a006-c855926ee33c to https://uploads.mangadex.org/covers/4a5f641a-a66f-455a-9aa4-aeaf27f3d8b3/be91493c-a652-4db6-a2fe-575746cce3dd.png
+[PollSource][sync-1250684c-54f0-427b-8e24-a102bbfbf2ca] Waiting for rate limit token for mangadex...
+[RefreshCover] Job refresh-mangadex-4a5f641a-a66f-455a-9aa4-aeaf27f3d8b3 completed
+[RefreshCover] Job refresh-mangadex-a29b052d-9a36-463a-a534-f5303a6a0a19 started
+[RefreshCover] Processing 74f4b5cc-df72-47cb-b5ac-2ce29cff9ce6 (a29b052d-9a36-463a-a534-f5303a6a0a19) from mangadex
+[PollSource] Job sync-001ce55a-a429-4f27-9488-b064d6157d5b completed
+[PollSource] Job sync-1423fb68-aa4a-4852-8033-182d56d22fed started
+[PollSource][sync-1423fb68-aa4a-4852-8033-182d56d22fed] Starting process for source ID: 1423fb68-aa4a-4852-8033-182d56d22fed
+[PollSource][sync-13e280d3-eade-4aaf-9aa8-398078959ec9] Waiting for rate limit token for mangadex...
+[PollSource][sync-093c73c9-8e40-4932-99cf-141214d809ff] Polling MangaDex for Cherry Yuusha to "Sei" Naru Tsurugi...
+[MangaDex] Fetching sourceId: 4a211a09-128d-45a7-bf14-f7270bdc2110
+[PollSource][sync-1250684c-54f0-427b-8e24-a102bbfbf2ca] Polling MangaDex for Tensei Mae no Tutorial de Isekai Saikyou ni Narimashita.: Junbi Shisugite Daini no Jinsei wa Easy Mode desu!...
+[MangaDex] Fetching sourceId: e9ed28ac-e88a-4b8d-bd32-05feec97ff8a
+[PollSource][sync-14224e68-50ec-407b-8e5e-d68a79debf1a] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-cb7e5bd8-47a4-49bd-afad-41d7ed8331d8 completed
+[PollSource] Job sync-145ea654-a883-4af1-8b84-72abacabff2e started
+[PollSource][sync-145ea654-a883-4af1-8b84-72abacabff2e] Starting process for source ID: 145ea654-a883-4af1-8b84-72abacabff2e
+[PollSource][sync-033554d2-9f8e-44c7-8bcc-9a941ea8ba46] Polling mangadex for Ore Dake Kakushi Dungeon Seiha no Ranker...
+[MangaDex] Fetching sourceId: dff0e0bb-0954-4bfd-8e92-949bbacf787e
+[PollSource][sync-1423fb68-aa4a-4852-8033-182d56d22fed] Waiting for rate limit token for mangadex...
+[PollSource][sync-ae9c5ad3-9834-4bd3-9ede-b9ee1ebb0774] Polling MangaDex for Adventure of Flash...
+[MangaDex] Fetching sourceId: 498d951d-85e9-471d-a733-7bcc6ced3046
+[PollSource][sync-093c73c9-8e40-4932-99cf-141214d809ff] Error polling source 093c73c9-8e40-4932-99cf-141214d809ff: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-1250684c-54f0-427b-8e24-a102bbfbf2ca] Error polling source 1250684c-54f0-427b-8e24-a102bbfbf2ca: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-145ea654-a883-4af1-8b84-72abacabff2e] Waiting for rate limit token for mangadex...
+[PollSource][sync-0d872589-0c40-47f7-a0fe-745d66f8b6d4] Polling MangaDex for Another World's Highest Guild Leader ~I'm the weakest in the guild, but I can't quit the guild because of the heavy love of all the guild members~...
+[PollSource][sync-0d872589-0c40-47f7-a0fe-745d66f8b6d4] Error polling source 0d872589-0c40-47f7-a0fe-745d66f8b6d4: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-093c73c9-8e40-4932-99cf-141214d809ff failed: Custom Id cannot contain :
+[PollSource] Job sync-14b123e7-f2ca-4828-b1d1-b81703d293e8 started
+[PollSource][sync-14b123e7-f2ca-4828-b1d1-b81703d293e8] Starting process for source ID: 14b123e7-f2ca-4828-b1d1-b81703d293e8
+[PollSource] Job sync-1250684c-54f0-427b-8e24-a102bbfbf2ca failed: Custom Id cannot contain :
+[PollSource][sync-033554d2-9f8e-44c7-8bcc-9a941ea8ba46] Error polling source 033554d2-9f8e-44c7-8bcc-9a941ea8ba46: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource] Job sync-0d872589-0c40-47f7-a0fe-745d66f8b6d4 completed
+[PollSource] Job sync-187d2142-d44f-4997-869b-eaa6605bc7b6 started
+[PollSource][sync-187d2142-d44f-4997-869b-eaa6605bc7b6] Starting process for source ID: 187d2142-d44f-4997-869b-eaa6605bc7b6
+[PollSource] Job sync-19c2d0d6-9832-4476-b2fb-8f96547ce203 started
+[PollSource][sync-19c2d0d6-9832-4476-b2fb-8f96547ce203] Starting process for source ID: 19c2d0d6-9832-4476-b2fb-8f96547ce203
+[PollSource] Job sync-033554d2-9f8e-44c7-8bcc-9a941ea8ba46 failed: Custom Id cannot contain :
+[PollSource][sync-0d5f7f22-d182-4ef7-999b-cba1c5d6dfab] Polling mangadex for Saijaku-shoku ga Zense no Chishiki de Sekai Saikyou ~Ore dake Level Genkai ga nai no de Mugen ni Tsuyoku naru Musou Life~...
+[MangaDex] Fetching sourceId: debd9e4e-6cd0-4be9-98d9-7d9a6309cebf
+[PollSource] Job sync-1a03477e-e207-4186-aa1c-d2a6e39e6ab3 started
+[PollSource][sync-1a03477e-e207-4186-aa1c-d2a6e39e6ab3] Starting process for source ID: 1a03477e-e207-4186-aa1c-d2a6e39e6ab3
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/2dab66cc-f819-4ac4-8566-717331348f4b/4d988a9f-4329-43a4-bc77-008daa41b58a.jpg
+[PollSource][sync-14b123e7-f2ca-4828-b1d1-b81703d293e8] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-ae9c5ad3-9834-4bd3-9ede-b9ee1ebb0774 completed
+[PollSource] Job sync-1efd99b2-3bf9-41de-837f-b2ce54e324bf started
+[PollSource][sync-1efd99b2-3bf9-41de-837f-b2ce54e324bf] Starting process for source ID: 1efd99b2-3bf9-41de-837f-b2ce54e324bf
+[PollSource][sync-1423fb68-aa4a-4852-8033-182d56d22fed] Polling MangaDex for Is It Odd That I Became an Adventurer Even If I Graduated From the Witchcraft Institute?...
+[PollSource][sync-1423fb68-aa4a-4852-8033-182d56d22fed] Error polling source 1423fb68-aa4a-4852-8033-182d56d22fed: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-187d2142-d44f-4997-869b-eaa6605bc7b6] Waiting for rate limit token for mangadex...
+[PollSource][sync-19c2d0d6-9832-4476-b2fb-8f96547ce203] Waiting for rate limit token for mangadex...
+[PollSource][sync-14b123e7-f2ca-4828-b1d1-b81703d293e8] Polling MangaDex for Kikori no Isekai Tan...
+[PollSource][sync-14b123e7-f2ca-4828-b1d1-b81703d293e8] Error polling source 14b123e7-f2ca-4828-b1d1-b81703d293e8: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-1423fb68-aa4a-4852-8033-182d56d22fed completed
+[PollSource] Job sync-23fd80ad-41b4-4d88-ac36-c2d873b9c851 started
+[PollSource][sync-23fd80ad-41b4-4d88-ac36-c2d873b9c851] Starting process for source ID: 23fd80ad-41b4-4d88-ac36-c2d873b9c851
+[PollSource][sync-1a03477e-e207-4186-aa1c-d2a6e39e6ab3] Waiting for rate limit token for mangadex...
+[RefreshCover] Updated cover for 41713032-42b8-4420-9137-1bca306b7244 to https://uploads.mangadex.org/covers/2dab66cc-f819-4ac4-8566-717331348f4b/4d988a9f-4329-43a4-bc77-008daa41b58a.jpg
+[Workers] Heartbeat sent
+[PollSource][sync-1efd99b2-3bf9-41de-837f-b2ce54e324bf] Waiting for rate limit token for mangadex...
+[RefreshCover] Job refresh-mangadex-2dab66cc-f819-4ac4-8566-717331348f4b completed
+[RefreshCover] Job refresh-mangadex-2ae11ecf-f527-47e4-983e-8ae73c3b6a7b started
+[RefreshCover] Processing 56e7bf74-e4df-47a3-8e79-7f19c149e227 (2ae11ecf-f527-47e4-983e-8ae73c3b6a7b) from mangadex
+[PollSource][sync-0d5f7f22-d182-4ef7-999b-cba1c5d6dfab] Error polling source 0d5f7f22-d182-4ef7-999b-cba1c5d6dfab: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource] Job sync-14b123e7-f2ca-4828-b1d1-b81703d293e8 completed
+[PollSource] Job sync-259576c3-df68-489e-b5dc-149ed2e744a7 started
+[PollSource][sync-259576c3-df68-489e-b5dc-149ed2e744a7] Starting process for source ID: 259576c3-df68-489e-b5dc-149ed2e744a7
+[PollSource][sync-0b872bc0-1e95-445a-bd76-908db7b53e3c] Polling MangaDex for Isekai H Eiyuuden ~Bishoujo Senshi-tachi wa Saikyou Gunshi no Muchana Onegai ni Sakaraenai~...
+[MangaDex] Fetching sourceId: 2d59bd6a-4446-41aa-8fc4-e4e1659df04d
+[PollSource][sync-1a03477e-e207-4186-aa1c-d2a6e39e6ab3] Polling MangaDex for Ryuu to Ayumu Nariagari Boukensha-dou ~Youzumi Toshite S-Rank Party kara Tsuihou Sareta Kaifuku Majutsushi, Suterareta Saki de Saikyou no Shinryuu wo Fukkatsu Sasete Shimau~...
+[MangaDex] Fetching sourceId: 901da7d9-8742-4f1a-9432-b7c1e67a5daf
+[PollSource] Job sync-0d5f7f22-d182-4ef7-999b-cba1c5d6dfab failed: Custom Id cannot contain :
+[PollSource][sync-23fd80ad-41b4-4d88-ac36-c2d873b9c851] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-2aa8deda-6f4f-4e4e-ad30-c1cbe79794a9 started
+[PollSource][sync-2aa8deda-6f4f-4e4e-ad30-c1cbe79794a9] Starting process for source ID: 2aa8deda-6f4f-4e4e-ad30-c1cbe79794a9
+[PollSource][sync-259576c3-df68-489e-b5dc-149ed2e744a7] Waiting for rate limit token for mangadex...
+[PollSource][sync-14224e68-50ec-407b-8e5e-d68a79debf1a] Polling MangaDex for Isekai Harem Loop ~Kurikaesareru 1-nichi kara dasshutsu suru tame ni dakimakurimasu~...
+[PollSource][sync-14224e68-50ec-407b-8e5e-d68a79debf1a] Error polling source 14224e68-50ec-407b-8e5e-d68a79debf1a: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-1a03477e-e207-4186-aa1c-d2a6e39e6ab3] Error polling source 1a03477e-e207-4186-aa1c-d2a6e39e6ab3: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-0b872bc0-1e95-445a-bd76-908db7b53e3c] Error polling source 0b872bc0-1e95-445a-bd76-908db7b53e3c: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource] Job sync-14224e68-50ec-407b-8e5e-d68a79debf1a completed
+[PollSource] Job sync-2ba30109-cbe2-4efc-914f-cb60af4f1f12 started
+[PollSource][sync-2ba30109-cbe2-4efc-914f-cb60af4f1f12] Starting process for source ID: 2ba30109-cbe2-4efc-914f-cb60af4f1f12
+[PollSource] Job sync-1a03477e-e207-4186-aa1c-d2a6e39e6ab3 failed: Custom Id cannot contain :
+[PollSource][sync-2aa8deda-6f4f-4e4e-ad30-c1cbe79794a9] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-2bf1f389-d6e3-40d3-9e2a-d45da4abdb98 started
+[PollSource][sync-2bf1f389-d6e3-40d3-9e2a-d45da4abdb98] Starting process for source ID: 2bf1f389-d6e3-40d3-9e2a-d45da4abdb98
+[PollSource] Job sync-0b872bc0-1e95-445a-bd76-908db7b53e3c failed: Custom Id cannot contain :
+[PollSource][sync-0d849027-19d7-433c-a215-ad55bbcddefc] Polling MangaDex for Genkai Shuuraku wo Datsu Shita Renkinjutsushi, Tokai de Saikyou nano ga Baremakuru...
+[PollSource][sync-0d849027-19d7-433c-a215-ad55bbcddefc] Error polling source 0d849027-19d7-433c-a215-ad55bbcddefc: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/8c1fae54-f7d1-47ea-99d7-162a1365e09b/be3665f4-466c-4c73-b4f7-df2c78ffb9c9.jpg
+[PollSource] Job sync-2c2a07b8-f4b3-498f-a71c-f9364b064e8a started
+[PollSource][sync-2c2a07b8-f4b3-498f-a71c-f9364b064e8a] Starting process for source ID: 2c2a07b8-f4b3-498f-a71c-f9364b064e8a
+[PollSource][sync-2aa8deda-6f4f-4e4e-ad30-c1cbe79794a9] Polling MangaDex for Ochikobore [☆1] Mahou Tsukai wa, Kyou mo Muishiki ni Cheat wo Tsukau...
+[MangaDex] Fetching sourceId: 936a179b-a865-4e14-aa94-7a31679d7e90
+[PollSource] Job sync-0d849027-19d7-433c-a215-ad55bbcddefc completed
+[PollSource] Job sync-2cbfc1a8-8a55-497d-93f1-4e7c28a206f0 started
+[PollSource][sync-2cbfc1a8-8a55-497d-93f1-4e7c28a206f0] Starting process for source ID: 2cbfc1a8-8a55-497d-93f1-4e7c28a206f0
+[PollSource][sync-2ba30109-cbe2-4efc-914f-cb60af4f1f12] Waiting for rate limit token for mangadex...
+[PollSource][sync-2bf1f389-d6e3-40d3-9e2a-d45da4abdb98] Waiting for rate limit token for mangadex...
+[RefreshCover] Updated cover for 3455b45e-4297-418d-aa7d-8c636a8a7645 to https://uploads.mangadex.org/covers/8c1fae54-f7d1-47ea-99d7-162a1365e09b/be3665f4-466c-4c73-b4f7-df2c78ffb9c9.jpg
+[PollSource][sync-2c2a07b8-f4b3-498f-a71c-f9364b064e8a] Waiting for rate limit token for mangadex...
+[RefreshCover] Job refresh-mangadex-8c1fae54-f7d1-47ea-99d7-162a1365e09b completed
+[RefreshCover] Job refresh-mangadex-131a4205-f89d-4521-8512-e3f4221dc8a1 started
+[RefreshCover] Processing d199173e-e673-48c2-8ec0-af6a10d6a972 (131a4205-f89d-4521-8512-e3f4221dc8a1) from mangadex
+[PollSource][sync-2cbfc1a8-8a55-497d-93f1-4e7c28a206f0] Waiting for rate limit token for mangadex...
+[PollSource][sync-685947a6-7e0d-44ee-b47d-cba4b5515c0c] Polling MangaDex for "Sono Hen no Kusa demo Kuttoke" to Tsuihou Sareta Munou Skill [Shokubutsugui] Mochi Tenseisha, Elf no Sato de Maboroshi no Shokubutsu o Tabete Musou Suru...
+[MangaDex] Fetching sourceId: 03bec986-3b8c-45dd-b659-7a2619a086c8
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/9fa94f7e-0878-42b5-b391-11983cea99d9/2da90267-b628-4cf5-9240-5b6f477b9c79.png
+[PollSource][sync-2aa8deda-6f4f-4e4e-ad30-c1cbe79794a9] Error polling source 2aa8deda-6f4f-4e4e-ad30-c1cbe79794a9: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-2c2a07b8-f4b3-498f-a71c-f9364b064e8a] Polling MangaDex for The 100 Girlfriends Who Really, Really, Really, Really, Really Love You...
+[PollSource][sync-2c2a07b8-f4b3-498f-a71c-f9364b064e8a] Error polling source 2c2a07b8-f4b3-498f-a71c-f9364b064e8a: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-2aa8deda-6f4f-4e4e-ad30-c1cbe79794a9 failed: Custom Id cannot contain :
+[PollSource] Job sync-2c2a07b8-f4b3-498f-a71c-f9364b064e8a completed
+[PollSource] Job sync-2dcfb7bc-901e-4b54-8f9f-9d5b5878f6eb started
+[PollSource][sync-2dcfb7bc-901e-4b54-8f9f-9d5b5878f6eb] Starting process for source ID: 2dcfb7bc-901e-4b54-8f9f-9d5b5878f6eb
+[PollSource] Job sync-2e8a330a-eb08-4bb6-927b-bcbcf72d39bd started
+[PollSource][sync-2e8a330a-eb08-4bb6-927b-bcbcf72d39bd] Starting process for source ID: 2e8a330a-eb08-4bb6-927b-bcbcf72d39bd
+[RefreshCover] Updated cover for 986a58c4-36cc-433d-a841-05d5b370963f to https://uploads.mangadex.org/covers/9fa94f7e-0878-42b5-b391-11983cea99d9/2da90267-b628-4cf5-9240-5b6f477b9c79.png
+[RefreshCover] Job refresh-mangadex-9fa94f7e-0878-42b5-b391-11983cea99d9 completed
+[RefreshCover] Job refresh-mangadex-64204675-f0c9-46e5-b6dd-51a6efc3040f started
+[RefreshCover] Processing 6959bbdf-83e8-4787-8691-88cfd818cb1f (64204675-f0c9-46e5-b6dd-51a6efc3040f) from mangadex
+[PollSource][sync-04e9a676-d391-402c-8c94-30c266a847ef] Polling MangaDex for Munou wa Fuyou to Iware "Tokei Tsukai" no Boku wa Shokunin Guild kara Oidasareru mo, Dungeon no Shinbu de Shin mo Chikara ni Kakusei suru...
+[MangaDex] Fetching sourceId: 22242223-9791-4a1b-9b31-1a9b830c70e4
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/131a4205-f89d-4521-8512-e3f4221dc8a1/7f02d771-ab43-4006-ae37-b02fa8490f9e.png
+[PollSource][sync-2bf1f389-d6e3-40d3-9e2a-d45da4abdb98] Polling MangaDex for Kakure Tensei...
+[MangaDex] Fetching sourceId: 07dcd201-fe35-46cd-8931-e1445efbe469
+[PollSource] Job sync-685947a6-7e0d-44ee-b47d-cba4b5515c0c completed
+[PollSource] Job sync-2fec3d6a-ff10-42bf-bb3e-0277d668ef82 started
+[PollSource][sync-2fec3d6a-ff10-42bf-bb3e-0277d668ef82] Starting process for source ID: 2fec3d6a-ff10-42bf-bb3e-0277d668ef82
+[PollSource][sync-2dcfb7bc-901e-4b54-8f9f-9d5b5878f6eb] Waiting for rate limit token for mangadex...
+[PollSource][sync-2e8a330a-eb08-4bb6-927b-bcbcf72d39bd] Waiting for rate limit token for mangadex...
+[PollSource][sync-04e9a676-d391-402c-8c94-30c266a847ef] Error polling source 04e9a676-d391-402c-8c94-30c266a847ef: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource] Job sync-04e9a676-d391-402c-8c94-30c266a847ef failed: Custom Id cannot contain :
+[PollSource][sync-2bf1f389-d6e3-40d3-9e2a-d45da4abdb98] Error polling source 2bf1f389-d6e3-40d3-9e2a-d45da4abdb98: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[RefreshCover] Updated cover for d199173e-e673-48c2-8ec0-af6a10d6a972 to https://uploads.mangadex.org/covers/131a4205-f89d-4521-8512-e3f4221dc8a1/7f02d771-ab43-4006-ae37-b02fa8490f9e.png
+[PollSource][sync-145ea654-a883-4af1-8b84-72abacabff2e] Polling MangaDex for Yuusha Party wo Oidasareta Shiryou Majutsushi wa Lich ni Natte Maou-gun de Daisukina Kenkyuu Life wo Okuru...
+[MangaDex] Fetching sourceId: 96679dd6-8f7b-440b-b336-f52af9364633
+[PollSource] Job sync-31a1421a-15a5-49b3-a3f4-f642b3df3e55 started
+[PollSource][sync-31a1421a-15a5-49b3-a3f4-f642b3df3e55] Starting process for source ID: 31a1421a-15a5-49b3-a3f4-f642b3df3e55
+[PollSource][sync-2fec3d6a-ff10-42bf-bb3e-0277d668ef82] Waiting for rate limit token for mangadex...
+[RefreshCover] Job refresh-mangadex-131a4205-f89d-4521-8512-e3f4221dc8a1 completed
+[RefreshCover] Job refresh-mangadex-045d7882-bddc-43fa-abc8-4acf5199b76c started
+[RefreshCover] Processing 727bf0ee-8331-4be6-b443-43d596e8c7cb (045d7882-bddc-43fa-abc8-4acf5199b76c) from mangadex
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/64204675-f0c9-46e5-b6dd-51a6efc3040f/e01974c5-31ba-401d-b4f1-47e4211355d7.jpg
+[PollSource] Job sync-2bf1f389-d6e3-40d3-9e2a-d45da4abdb98 failed: Custom Id cannot contain :
+[PollSource] Job sync-3480de23-2ee6-479c-9301-2aa7633c2d75 started
+[PollSource][sync-3480de23-2ee6-479c-9301-2aa7633c2d75] Starting process for source ID: 3480de23-2ee6-479c-9301-2aa7633c2d75
+[PollSource][sync-1efd99b2-3bf9-41de-837f-b2ce54e324bf] Polling MangaDex for Jinmyaku Cheat de Hajimeru Hitomakase Eiyuu-tan...
+[PollSource][sync-1efd99b2-3bf9-41de-837f-b2ce54e324bf] Error polling source 1efd99b2-3bf9-41de-837f-b2ce54e324bf: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-1efd99b2-3bf9-41de-837f-b2ce54e324bf completed
+[PollSource] Job sync-352ed491-8848-43fe-8973-f458c52b7db5 started
+[PollSource][sync-352ed491-8848-43fe-8973-f458c52b7db5] Starting process for source ID: 352ed491-8848-43fe-8973-f458c52b7db5
+[PollSource][sync-2fec3d6a-ff10-42bf-bb3e-0277d668ef82] Polling MangaDex for Hazure Hantei kara Hajimatta Cheat Majutsushi Seikatsu...
+[MangaDex] Fetching sourceId: e64ba108-bbd7-40ce-9243-21791d9489bf
+[PollSource][sync-31a1421a-15a5-49b3-a3f4-f642b3df3e55] Waiting for rate limit token for mangadex...
+[RefreshCover] Updated cover for 6959bbdf-83e8-4787-8691-88cfd818cb1f to https://uploads.mangadex.org/covers/64204675-f0c9-46e5-b6dd-51a6efc3040f/e01974c5-31ba-401d-b4f1-47e4211355d7.jpg
+[RefreshCover] Job refresh-mangadex-64204675-f0c9-46e5-b6dd-51a6efc3040f completed
+[RefreshCover] Job refresh-mangadex-7209b470-5c0c-4289-8c2b-34400b754734 started
+[RefreshCover] Processing 86cd105a-dc66-4caf-9387-3a42bb20fe45 (7209b470-5c0c-4289-8c2b-34400b754734) from mangadex
+[PollSource][sync-145ea654-a883-4af1-8b84-72abacabff2e] Error polling source 145ea654-a883-4af1-8b84-72abacabff2e: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-3480de23-2ee6-479c-9301-2aa7633c2d75] Waiting for rate limit token for mangadex...
+[PollSource][sync-23fd80ad-41b4-4d88-ac36-c2d873b9c851] Polling MangaDex for Hazure Skill "Kage ga Usui" o Motsu Guild Shokuin ga, Jitsuha Densetsu no Ansatsusha...
+[PollSource][sync-23fd80ad-41b4-4d88-ac36-c2d873b9c851] Error polling source 23fd80ad-41b4-4d88-ac36-c2d873b9c851: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-145ea654-a883-4af1-8b84-72abacabff2e failed: Custom Id cannot contain :
+[PollSource] Job sync-23fd80ad-41b4-4d88-ac36-c2d873b9c851 completed
+[PollSource][sync-352ed491-8848-43fe-8973-f458c52b7db5] Waiting for rate limit token for mangadex...
+[PollSource][sync-13e280d3-eade-4aaf-9aa8-398078959ec9] Polling MangaDex for Ningen Fushin no Boukenshatachi ga Sekai o Sukuu Youdesu...
+[MangaDex] Fetching sourceId: 2356f5ff-143f-4e3b-96e6-9d9f5efab8c5
+[PollSource] Job sync-35e91e36-07eb-46d2-9cef-416cf7bb8ec5 started
+[PollSource][sync-35e91e36-07eb-46d2-9cef-416cf7bb8ec5] Starting process for source ID: 35e91e36-07eb-46d2-9cef-416cf7bb8ec5
+[PollSource] Job sync-3a84f16e-2038-420d-bfdf-09aee0e252b7 started
+[PollSource][sync-3a84f16e-2038-420d-bfdf-09aee0e252b7] Starting process for source ID: 3a84f16e-2038-420d-bfdf-09aee0e252b7
+[PollSource][sync-049ced48-202b-4123-a77e-e9094f33e650] Polling MangaDex for Yuusha Party wo Tsuihou sareta node, Maou wo Torikaeshi ga Tsukanai hodo Tsuyoku Sodatetemita...
+[MangaDex] Fetching sourceId: 821d9612-bef9-4ea4-b71e-47333f2dcebe
+[PollSource][sync-2fec3d6a-ff10-42bf-bb3e-0277d668ef82] Error polling source 2fec3d6a-ff10-42bf-bb3e-0277d668ef82: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-35e91e36-07eb-46d2-9cef-416cf7bb8ec5] Waiting for rate limit token for mangadex...
+[PollSource][sync-3a84f16e-2038-420d-bfdf-09aee0e252b7] Waiting for rate limit token for mangadex...
+[PollSource][sync-13e280d3-eade-4aaf-9aa8-398078959ec9] Error polling source 13e280d3-eade-4aaf-9aa8-398078959ec9: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-2dcfb7bc-901e-4b54-8f9f-9d5b5878f6eb] Polling MangaDex for Boku wa Isekai de Fuyo Mahou to Shoukan Mahou wo Tenbin ni Kakeru...
+[MangaDex] Fetching sourceId: bd22ac44-3832-4f35-b0d5-9b69d60cb472
+[PollSource] Job sync-2fec3d6a-ff10-42bf-bb3e-0277d668ef82 failed: Custom Id cannot contain :
+[PollSource] Job sync-3aa33538-9687-4682-b58d-c075716883ff started
+[PollSource][sync-3aa33538-9687-4682-b58d-c075716883ff] Starting process for source ID: 3aa33538-9687-4682-b58d-c075716883ff
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/ab8a4653-f4ed-4a99-bce5-e4b0f1a61757/207c381f-9318-4713-b53f-f7202f2a421d.jpg
+[PollSource][sync-35e91e36-07eb-46d2-9cef-416cf7bb8ec5] Polling MangaDex for Sekai Saikyou no Kouei: Meikyuukoku no Shinjin Tansakusha...
+[MangaDex] Fetching sourceId: b347d551-52eb-40cb-a11a-bfb9959d6495
+[PollSource] Job sync-13e280d3-eade-4aaf-9aa8-398078959ec9 failed: Custom Id cannot contain :
+[PollSource][sync-049ced48-202b-4123-a77e-e9094f33e650] Error polling source 049ced48-202b-4123-a77e-e9094f33e650: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource] Job sync-3c7018e8-808f-487a-b450-c09138ccd1dd started
+[PollSource][sync-3c7018e8-808f-487a-b450-c09138ccd1dd] Starting process for source ID: 3c7018e8-808f-487a-b450-c09138ccd1dd
+[PollSource] Job sync-049ced48-202b-4123-a77e-e9094f33e650 failed: Custom Id cannot contain :
+[PollSource][sync-3a84f16e-2038-420d-bfdf-09aee0e252b7] Polling MangaDex for Ore, Yuusha janai desu kara. - VR Sekai no Chouten ni Kunrin Seshi Otoko. Tenseishi, Level 1 no Mushoku kara Restart suru...
+[MangaDex] Fetching sourceId: 13c3245e-ca45-4f8f-983f-7357c66c1ba5
+[RefreshCover] Updated cover for 61b6ed9c-0261-400e-b639-84565a4918ac to https://uploads.mangadex.org/covers/ab8a4653-f4ed-4a99-bce5-e4b0f1a61757/207c381f-9318-4713-b53f-f7202f2a421d.jpg
+[PollSource] Job sync-3e1c56a8-b4c5-4318-836a-07e966e927b8 started
+[PollSource][sync-3e1c56a8-b4c5-4318-836a-07e966e927b8] Starting process for source ID: 3e1c56a8-b4c5-4318-836a-07e966e927b8
+[PollSource][sync-3aa33538-9687-4682-b58d-c075716883ff] Waiting for rate limit token for mangadex...
+[RefreshCover] Job refresh-mangadex-ab8a4653-f4ed-4a99-bce5-e4b0f1a61757 completed
+[RefreshCover] Job refresh-mangadex-51cb64be-c366-4dd6-9557-6afb535a425a started
+[RefreshCover] Processing 55caba1f-7d57-4914-8c1b-4034a54a2cf7 (51cb64be-c366-4dd6-9557-6afb535a425a) from mangadex
+[PollSource][sync-2dcfb7bc-901e-4b54-8f9f-9d5b5878f6eb] Error polling source 2dcfb7bc-901e-4b54-8f9f-9d5b5878f6eb: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-3c7018e8-808f-487a-b450-c09138ccd1dd] Waiting for rate limit token for mangadex...
+[PollSource][sync-35e91e36-07eb-46d2-9cef-416cf7bb8ec5] Error polling source 35e91e36-07eb-46d2-9cef-416cf7bb8ec5: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-3aa33538-9687-4682-b58d-c075716883ff] Polling MangaDex for Senken no Majutsushi to Yobareta Kenshi...
+[PollSource][sync-3aa33538-9687-4682-b58d-c075716883ff] Error polling source 3aa33538-9687-4682-b58d-c075716883ff: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-2dcfb7bc-901e-4b54-8f9f-9d5b5878f6eb failed: Custom Id cannot contain :
+[PollSource][sync-3e1c56a8-b4c5-4318-836a-07e966e927b8] Waiting for rate limit token for mangadex...
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/a29b052d-9a36-463a-a534-f5303a6a0a19/e49591bf-0e13-4581-9878-e013f8458b9f.jpg
+[PollSource] Job sync-3e2ff5f3-1ef3-46fb-a0c8-72585d1b7bea started
+[PollSource][sync-3e2ff5f3-1ef3-46fb-a0c8-72585d1b7bea] Starting process for source ID: 3e2ff5f3-1ef3-46fb-a0c8-72585d1b7bea
+[Workers] Heartbeat sent
+[PollSource][sync-3c7018e8-808f-487a-b450-c09138ccd1dd] Polling MangaDex for Reincarnation of the Online Game Addict: I Can’t Use the Overpowered Fists That Made Me the Fist King, so Now I Swing a Club for Eight Hours a Day...
+[PollSource][sync-3c7018e8-808f-487a-b450-c09138ccd1dd] Error polling source 3c7018e8-808f-487a-b450-c09138ccd1dd: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-35e91e36-07eb-46d2-9cef-416cf7bb8ec5 failed: Custom Id cannot contain :
+[PollSource] Job sync-3aa33538-9687-4682-b58d-c075716883ff completed
+[PollSource][sync-3a84f16e-2038-420d-bfdf-09aee0e252b7] Error polling source 3a84f16e-2038-420d-bfdf-09aee0e252b7: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource] Job sync-40139cb7-8a0b-4b49-9f26-c5736dc81752 started
+[PollSource][sync-40139cb7-8a0b-4b49-9f26-c5736dc81752] Starting process for source ID: 40139cb7-8a0b-4b49-9f26-c5736dc81752
+[PollSource] Job sync-40151845-134a-48bc-85f8-58db613b552d started
+[PollSource][sync-40151845-134a-48bc-85f8-58db613b552d] Starting process for source ID: 40151845-134a-48bc-85f8-58db613b552d
+[PollSource] Job sync-3c7018e8-808f-487a-b450-c09138ccd1dd completed
+[PollSource] Job sync-40dfd098-51d3-4e4e-9cd3-c127593174e6 started
+[PollSource][sync-40dfd098-51d3-4e4e-9cd3-c127593174e6] Starting process for source ID: 40dfd098-51d3-4e4e-9cd3-c127593174e6
+[PollSource][sync-3e1c56a8-b4c5-4318-836a-07e966e927b8] Polling MangaDex for Kujibiki Tokushou Musou Harem-ken...
+[PollSource][sync-3e1c56a8-b4c5-4318-836a-07e966e927b8] Error polling source 3e1c56a8-b4c5-4318-836a-07e966e927b8: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-3a84f16e-2038-420d-bfdf-09aee0e252b7 failed: Custom Id cannot contain :
+[RefreshCover] Updated cover for 74f4b5cc-df72-47cb-b5ac-2ce29cff9ce6 to https://uploads.mangadex.org/covers/a29b052d-9a36-463a-a534-f5303a6a0a19/e49591bf-0e13-4581-9878-e013f8458b9f.jpg
+[PollSource] Job sync-41810ad4-2071-497d-9e89-30610c3cf14a started
+[PollSource][sync-41810ad4-2071-497d-9e89-30610c3cf14a] Starting process for source ID: 41810ad4-2071-497d-9e89-30610c3cf14a
+[PollSource][sync-3e2ff5f3-1ef3-46fb-a0c8-72585d1b7bea] Waiting for rate limit token for mangadex...
+[RefreshCover] Job refresh-mangadex-a29b052d-9a36-463a-a534-f5303a6a0a19 completed
+[RefreshCover] Job refresh-mangadex-3586407d-056f-4bd5-95ec-53041654b7a3 started
+[RefreshCover] Processing ca7c586e-e64a-42f3-bf3a-cbc4b36bb43c (3586407d-056f-4bd5-95ec-53041654b7a3) from mangadex
+[PollSource] Job sync-3e1c56a8-b4c5-4318-836a-07e966e927b8 completed
+[PollSource] Job sync-42606b97-015f-4331-beab-39fb804251f9 started
+[PollSource][sync-42606b97-015f-4331-beab-39fb804251f9] Starting process for source ID: 42606b97-015f-4331-beab-39fb804251f9
+[PollSource][sync-40139cb7-8a0b-4b49-9f26-c5736dc81752] Waiting for rate limit token for mangadex...
+[PollSource][sync-40151845-134a-48bc-85f8-58db613b552d] Waiting for rate limit token for mangadex...
+[PollSource][sync-3e2ff5f3-1ef3-46fb-a0c8-72585d1b7bea] Polling MangaDex for Last Boss Toubatsugo ni Hajimeru Nishuume Boukensha Life Hajimari no Machi de Wakeari Bishoujo-tachi ga Mechakucha Natsuite kimasu...
+[PollSource][sync-3e2ff5f3-1ef3-46fb-a0c8-72585d1b7bea] Error polling source 3e2ff5f3-1ef3-46fb-a0c8-72585d1b7bea: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-40dfd098-51d3-4e4e-9cd3-c127593174e6] Waiting for rate limit token for mangadex...
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/51cb64be-c366-4dd6-9557-6afb535a425a/7583fe16-ee8e-4422-ab06-b5e9772843e0.jpg
+[PollSource][sync-41810ad4-2071-497d-9e89-30610c3cf14a] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-3e2ff5f3-1ef3-46fb-a0c8-72585d1b7bea completed
+[PollSource] Job sync-426bcf5a-14da-433c-835d-e32c5ea58efe started
+[PollSource][sync-426bcf5a-14da-433c-835d-e32c5ea58efe] Starting process for source ID: 426bcf5a-14da-433c-835d-e32c5ea58efe
+[PollSource][sync-42606b97-015f-4331-beab-39fb804251f9] Waiting for rate limit token for mangadex...
+[PollSource][sync-31a1421a-15a5-49b3-a3f4-f642b3df3e55] Polling MangaDex for Lord-Magear no Deshi...
+[MangaDex] Fetching sourceId: 0935af3d-2659-43f7-97f9-4cc2402fad58
+[PollSource][sync-41810ad4-2071-497d-9e89-30610c3cf14a] Polling MangaDex for Kuni wo Owareta Ryuushi-san, Hirowareta Ringoku de Ukkari Musou shite Shimau....
+[PollSource][sync-41810ad4-2071-497d-9e89-30610c3cf14a] Error polling source 41810ad4-2071-497d-9e89-30610c3cf14a: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[RefreshCover] Updated cover for 55caba1f-7d57-4914-8c1b-4034a54a2cf7 to https://uploads.mangadex.org/covers/51cb64be-c366-4dd6-9557-6afb535a425a/7583fe16-ee8e-4422-ab06-b5e9772843e0.jpg
+[RefreshCover] Job refresh-mangadex-51cb64be-c366-4dd6-9557-6afb535a425a completed
+[RefreshCover] Job refresh-mangadex-e1c3cfd5-656d-4c1d-8d73-7b4e477a711b started
+[RefreshCover] Processing a4c4f3db-27eb-4267-a24b-24a4a73a55aa (e1c3cfd5-656d-4c1d-8d73-7b4e477a711b) from mangadex
+[PollSource] Job sync-41810ad4-2071-497d-9e89-30610c3cf14a completed
+[PollSource] Job sync-43c65c49-856c-4507-bdf8-10fb222f124a started
+[PollSource][sync-43c65c49-856c-4507-bdf8-10fb222f124a] Starting process for source ID: 43c65c49-856c-4507-bdf8-10fb222f124a
+[PollSource][sync-426bcf5a-14da-433c-835d-e32c5ea58efe] Waiting for rate limit token for mangadex...
+[PollSource][sync-42606b97-015f-4331-beab-39fb804251f9] Polling MangaDex for Tsuihousareta Jougenshi no Guild Keiei...
+[PollSource][sync-42606b97-015f-4331-beab-39fb804251f9] Error polling source 42606b97-015f-4331-beab-39fb804251f9: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-31a1421a-15a5-49b3-a3f4-f642b3df3e55] Error polling source 31a1421a-15a5-49b3-a3f4-f642b3df3e55: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-259576c3-df68-489e-b5dc-149ed2e744a7] Polling MangaDex for Kizetsu Yuusha to Ansatsu Hime...
+[MangaDex] Fetching sourceId: d5c321e4-af53-4dfd-b6f8-78b0c5d556f8
+[PollSource] Job sync-42606b97-015f-4331-beab-39fb804251f9 completed
+[PollSource] Job sync-44289427-fd73-4b32-841f-3d5a53814deb started
+[PollSource][sync-44289427-fd73-4b32-841f-3d5a53814deb] Starting process for source ID: 44289427-fd73-4b32-841f-3d5a53814deb
+[PollSource][sync-43c65c49-856c-4507-bdf8-10fb222f124a] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-31a1421a-15a5-49b3-a3f4-f642b3df3e55 failed: Custom Id cannot contain :
+[PollSource][sync-0f3716b2-1d91-4f2d-884d-d37d4be650f0] Polling mangadex for Class ga Isekai Shoukan sareta Naka Ore dake Nokotta n desu ga...
+[MangaDex] Fetching sourceId: 2e3d0203-e1d2-4142-b6ab-69a70643d7a1
+[PollSource] Job sync-44884882-9657-4ad7-9d22-bd34edf155b4 started
+[PollSource][sync-44884882-9657-4ad7-9d22-bd34edf155b4] Starting process for source ID: 44884882-9657-4ad7-9d22-bd34edf155b4
+[PollSource][sync-44289427-fd73-4b32-841f-3d5a53814deb] Waiting for rate limit token for mangadex...
+[PollSource][sync-43c65c49-856c-4507-bdf8-10fb222f124a] Polling MangaDex for Tensei shitara Heimin deshita. ~Seikatsu Suijun ni Taerarenai no de Kizoku wo Mezashimasu~...
+[PollSource][sync-43c65c49-856c-4507-bdf8-10fb222f124a] Error polling source 43c65c49-856c-4507-bdf8-10fb222f124a: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-259576c3-df68-489e-b5dc-149ed2e744a7] Error polling source 259576c3-df68-489e-b5dc-149ed2e744a7: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-44884882-9657-4ad7-9d22-bd34edf155b4] Waiting for rate limit token for mangadex...
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/7209b470-5c0c-4289-8c2b-34400b754734/7389812f-b7c8-4dce-a66c-d3735a017e48.jpg
+[PollSource] Job sync-43c65c49-856c-4507-bdf8-10fb222f124a completed
+[PollSource] Job sync-469db5d4-52d8-42fd-8b64-fbed6cba6aff started
+[PollSource][sync-469db5d4-52d8-42fd-8b64-fbed6cba6aff] Starting process for source ID: 469db5d4-52d8-42fd-8b64-fbed6cba6aff
+[PollSource][sync-0f3716b2-1d91-4f2d-884d-d37d4be650f0] Error polling source 0f3716b2-1d91-4f2d-884d-d37d4be650f0: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-2ba30109-cbe2-4efc-914f-cb60af4f1f12] Polling MangaDex for Teihen Boukensha Dakedo Mahou wo Kiwamete Miru Koto ni Shita ~Munou Skill kara Kami Skill ni Shinka Shita "Mahou Souzou" to "Item Sakusei" de Musou Suru~...
+[MangaDex] Fetching sourceId: 80e699b3-b75b-4141-b82b-4dbb5d50f3a0
+[PollSource] Job sync-259576c3-df68-489e-b5dc-149ed2e744a7 failed: Custom Id cannot contain :
+[PollSource] Job sync-470d92ff-353f-49b4-a762-91fbb15ada13 started
+[PollSource][sync-470d92ff-353f-49b4-a762-91fbb15ada13] Starting process for source ID: 470d92ff-353f-49b4-a762-91fbb15ada13
+[PollSource][sync-44884882-9657-4ad7-9d22-bd34edf155b4] Polling MangaDex for Cheat Mode Farming in Another World...
+[PollSource][sync-44884882-9657-4ad7-9d22-bd34edf155b4] Error polling source 44884882-9657-4ad7-9d22-bd34edf155b4: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-0f3716b2-1d91-4f2d-884d-d37d4be650f0 failed: Custom Id cannot contain :
+[RefreshCover] Updated cover for 86cd105a-dc66-4caf-9387-3a42bb20fe45 to https://uploads.mangadex.org/covers/7209b470-5c0c-4289-8c2b-34400b754734/7389812f-b7c8-4dce-a66c-d3735a017e48.jpg
+[PollSource] Job sync-486e36fd-edd8-445e-822d-6b2e12d7bc08 started
+[PollSource][sync-486e36fd-edd8-445e-822d-6b2e12d7bc08] Starting process for source ID: 486e36fd-edd8-445e-822d-6b2e12d7bc08
+[PollSource] Job sync-44884882-9657-4ad7-9d22-bd34edf155b4 completed
+[PollSource] Job sync-48b7c54a-0724-4142-b2ce-8310418ad1ac started
+[PollSource][sync-48b7c54a-0724-4142-b2ce-8310418ad1ac] Starting process for source ID: 48b7c54a-0724-4142-b2ce-8310418ad1ac
+[RefreshCover] Job refresh-mangadex-7209b470-5c0c-4289-8c2b-34400b754734 completed
+[RefreshCover] Job refresh-mangadex-c83cb270-6883-4684-8f77-d991509d5af3 started
+[RefreshCover] Processing d74d36a5-3af6-48ea-81e3-792a96f3e693 (c83cb270-6883-4684-8f77-d991509d5af3) from mangadex
+[PollSource][sync-2cbfc1a8-8a55-497d-93f1-4e7c28a206f0] Polling MangaDex for Fuguu Ouji wa Tensai Renkinjutsushi ~Koutei Nante Gara Janai no de Teimai wo Kawaigaritai~...
+[PollSource][sync-2cbfc1a8-8a55-497d-93f1-4e7c28a206f0] Error polling source 2cbfc1a8-8a55-497d-93f1-4e7c28a206f0: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-469db5d4-52d8-42fd-8b64-fbed6cba6aff] Waiting for rate limit token for mangadex...
+[PollSource][sync-470d92ff-353f-49b4-a762-91fbb15ada13] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-2cbfc1a8-8a55-497d-93f1-4e7c28a206f0 completed
+[PollSource] Job sync-4b50dfc4-0e9c-4cd7-afce-c27c278d4c49 started
+[PollSource][sync-4b50dfc4-0e9c-4cd7-afce-c27c278d4c49] Starting process for source ID: 4b50dfc4-0e9c-4cd7-afce-c27c278d4c49
+[PollSource][sync-40139cb7-8a0b-4b49-9f26-c5736dc81752] Polling MangaDex for Hazure Skill [Mapping] wo Te ni Shita Shonen ha Saikyou Party to Dungeon ni Idomu...
+[PollSource][sync-40139cb7-8a0b-4b49-9f26-c5736dc81752] Error polling source 40139cb7-8a0b-4b49-9f26-c5736dc81752: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-2ba30109-cbe2-4efc-914f-cb60af4f1f12] Error polling source 2ba30109-cbe2-4efc-914f-cb60af4f1f12: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-486e36fd-edd8-445e-822d-6b2e12d7bc08] Waiting for rate limit token for mangadex...
+[PollSource][sync-48b7c54a-0724-4142-b2ce-8310418ad1ac] Waiting for rate limit token for mangadex...
+[PollSource][sync-470d92ff-353f-49b4-a762-91fbb15ada13] Polling MangaDex for Shoukan Sukiru o Keishou shitanode, Kiwamete Miyou to Omoimasu! ~Mofumofu Mahou seibutsu to Isekai Life o Mankitsuchuu~...
+[PollSource][sync-470d92ff-353f-49b4-a762-91fbb15ada13] Error polling source 470d92ff-353f-49b4-a762-91fbb15ada13: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-2ba30109-cbe2-4efc-914f-cb60af4f1f12 failed: Custom Id cannot contain :
+[PollSource] Job sync-40139cb7-8a0b-4b49-9f26-c5736dc81752 completed
+[PollSource] Job sync-4c61cb39-a7bf-443c-9c62-edf6aaa8429c started
+[PollSource][sync-4c61cb39-a7bf-443c-9c62-edf6aaa8429c] Starting process for source ID: 4c61cb39-a7bf-443c-9c62-edf6aaa8429c
+[PollSource] Job sync-4d8e65d6-0eab-428b-b429-fd54674af9a0 started
+[PollSource][sync-4d8e65d6-0eab-428b-b429-fd54674af9a0] Starting process for source ID: 4d8e65d6-0eab-428b-b429-fd54674af9a0
+[PollSource][sync-486e36fd-edd8-445e-822d-6b2e12d7bc08] Polling MangaDex for Ore to seijo ga dekiteru koto ga baretara Kono party wa houkai suru...
+[PollSource][sync-486e36fd-edd8-445e-822d-6b2e12d7bc08] Error polling source 486e36fd-edd8-445e-822d-6b2e12d7bc08: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-470d92ff-353f-49b4-a762-91fbb15ada13 completed
+[PollSource] Job sync-4da38769-0750-4140-80f9-86ed8ea7cfd9 started
+[PollSource][sync-4da38769-0750-4140-80f9-86ed8ea7cfd9] Starting process for source ID: 4da38769-0750-4140-80f9-86ed8ea7cfd9
+[PollSource][sync-4b50dfc4-0e9c-4cd7-afce-c27c278d4c49] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-486e36fd-edd8-445e-822d-6b2e12d7bc08 completed
+[PollSource] Job sync-4da39d37-ee8f-40d0-b336-0fa4d2e19033 started
+[PollSource][sync-4da39d37-ee8f-40d0-b336-0fa4d2e19033] Starting process for source ID: 4da39d37-ee8f-40d0-b336-0fa4d2e19033
+[PollSource][sync-40151845-134a-48bc-85f8-58db613b552d] Polling MangaDex for SSS Rank Dungeon de Knife Ippon Tewatasare Tsuihou Sareta Shiro Madoushi: Yggdrasil no Noroi ni yori Jakuten de aru Maryoku Fusoku wo Kokufuku-shi Sekai Saikyou e to Itaru...
+[PollSource][sync-40151845-134a-48bc-85f8-58db613b552d] Error polling source 40151845-134a-48bc-85f8-58db613b552d: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-4c61cb39-a7bf-443c-9c62-edf6aaa8429c] Waiting for rate limit token for mangadex...
+[PollSource][sync-4d8e65d6-0eab-428b-b429-fd54674af9a0] Waiting for rate limit token for mangadex...
+[PollSource][sync-4da38769-0750-4140-80f9-86ed8ea7cfd9] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-40151845-134a-48bc-85f8-58db613b552d completed
+[PollSource] Job sync-4eb2b65b-7a5f-4259-b03d-3b71fa4f3705 started
+[PollSource][sync-4eb2b65b-7a5f-4259-b03d-3b71fa4f3705] Starting process for source ID: 4eb2b65b-7a5f-4259-b03d-3b71fa4f3705
+[PollSource][sync-19c2d0d6-9832-4476-b2fb-8f96547ce203] Polling MangaDex for Tensei Kenja wa Musume to Kurasu...
+[PollSource][sync-19c2d0d6-9832-4476-b2fb-8f96547ce203] Error polling source 19c2d0d6-9832-4476-b2fb-8f96547ce203: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-4c61cb39-a7bf-443c-9c62-edf6aaa8429c] Polling MangaDex for The Reborn Noble Levels up as a Saint...
+[PollSource][sync-4c61cb39-a7bf-443c-9c62-edf6aaa8429c] Error polling source 4c61cb39-a7bf-443c-9c62-edf6aaa8429c: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-4da39d37-ee8f-40d0-b336-0fa4d2e19033] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-19c2d0d6-9832-4476-b2fb-8f96547ce203 completed
+[PollSource] Job sync-4f0f6420-ac38-4aba-b5c5-96797faf0fb5 started
+[PollSource][sync-4f0f6420-ac38-4aba-b5c5-96797faf0fb5] Starting process for source ID: 4f0f6420-ac38-4aba-b5c5-96797faf0fb5
+[PollSource] Job sync-4c61cb39-a7bf-443c-9c62-edf6aaa8429c completed
+[PollSource] Job sync-513604af-523c-4785-9d92-c37bef3b2ec8 started
+[PollSource][sync-513604af-523c-4785-9d92-c37bef3b2ec8] Starting process for source ID: 513604af-523c-4785-9d92-c37bef3b2ec8
+[PollSource][sync-4eb2b65b-7a5f-4259-b03d-3b71fa4f3705] Waiting for rate limit token for mangadex...
+[PollSource][sync-4d8e65d6-0eab-428b-b429-fd54674af9a0] Polling MangaDex for Suna Mahou de Suna no Oukoku wo Tsukurou ~Sabaku ni Tsuihou Sareta kara Ganbatte Sokoku Ijou no Kokka wo Tatete Mita~...
+[MangaDex] Fetching sourceId: d63bd2fc-5356-4064-8057-25bbe0134dc7
+[PollSource][sync-4f0f6420-ac38-4aba-b5c5-96797faf0fb5] Waiting for rate limit token for mangadex...
+[PollSource][sync-4d8e65d6-0eab-428b-b429-fd54674af9a0] Error polling source 4d8e65d6-0eab-428b-b429-fd54674af9a0: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-513604af-523c-4785-9d92-c37bef3b2ec8] Waiting for rate limit token for mangadex...
+[PollSource][sync-4b50dfc4-0e9c-4cd7-afce-c27c278d4c49] Polling MangaDex for Monster Eater Adventurer...
+[PollSource][sync-4b50dfc4-0e9c-4cd7-afce-c27c278d4c49] Error polling source 4b50dfc4-0e9c-4cd7-afce-c27c278d4c49: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/045d7882-bddc-43fa-abc8-4acf5199b76c/e1822989-dd68-45b3-b23f-03b9c88f43e6.jpg
+[PollSource] Job sync-4d8e65d6-0eab-428b-b429-fd54674af9a0 failed: Custom Id cannot contain :
+[PollSource] Job sync-4b50dfc4-0e9c-4cd7-afce-c27c278d4c49 completed
+[PollSource] Job sync-51b19685-5889-4f5b-88c4-5fe7afaa9e09 started
+[PollSource][sync-51b19685-5889-4f5b-88c4-5fe7afaa9e09] Starting process for source ID: 51b19685-5889-4f5b-88c4-5fe7afaa9e09
+[PollSource] Job sync-51efbfa4-3e04-4253-90c6-2999f8250771 started
+[PollSource][sync-51efbfa4-3e04-4253-90c6-2999f8250771] Starting process for source ID: 51efbfa4-3e04-4253-90c6-2999f8250771
+[PollSource][sync-469db5d4-52d8-42fd-8b64-fbed6cba6aff] Polling MangaDex for Isekai de Tame shita Saikyou no Tsukaima wa, Osananajimi no Bishoujo Deshita...
+[PollSource][sync-469db5d4-52d8-42fd-8b64-fbed6cba6aff] Error polling source 469db5d4-52d8-42fd-8b64-fbed6cba6aff: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[RefreshCover] Updated cover for 727bf0ee-8331-4be6-b443-43d596e8c7cb to https://uploads.mangadex.org/covers/045d7882-bddc-43fa-abc8-4acf5199b76c/e1822989-dd68-45b3-b23f-03b9c88f43e6.jpg
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/c83cb270-6883-4684-8f77-d991509d5af3/5882c21e-6af0-4d45-8fd7-f8729995a295.jpg
+[Workers] Heartbeat sent
+[RefreshCover] Job refresh-mangadex-045d7882-bddc-43fa-abc8-4acf5199b76c completed
+[RefreshCover] Job refresh-mangadex-0b21fae8-b889-4c61-a842-d439abd7bff3 started
+[RefreshCover] Processing 4a61b6a3-4728-413f-8f55-07511d2cd607 (0b21fae8-b889-4c61-a842-d439abd7bff3) from mangadex
+[PollSource] Job sync-469db5d4-52d8-42fd-8b64-fbed6cba6aff completed
+[PollSource] Job sync-53f5dcf3-1928-4e4c-9abf-680374b730a3 started
+[PollSource][sync-53f5dcf3-1928-4e4c-9abf-680374b730a3] Starting process for source ID: 53f5dcf3-1928-4e4c-9abf-680374b730a3
+[PollSource][sync-51b19685-5889-4f5b-88c4-5fe7afaa9e09] Waiting for rate limit token for mangadex...
+[PollSource][sync-51efbfa4-3e04-4253-90c6-2999f8250771] Waiting for rate limit token for mangadex...
+[PollSource][sync-48b7c54a-0724-4142-b2ce-8310418ad1ac] Polling MangaDex for Otome Game no Mob Desura Naindaga...
+[MangaDex] Fetching sourceId: e279d973-e1dd-4cfc-b643-fda857b6f4a0
+[PollSource][sync-c8452c49-d000-4aa3-9fa1-b6c8a073ac7b] Polling MangaDex for "Aru Teido (?) no Mahou no Sainou" de Kondokoso Isekai de Slow Life wo Okurimasu...
+[MangaDex] Fetching sourceId: 5c46e237-042d-41cf-b127-7f767054c1e7
+[RefreshCover] Updated cover for d74d36a5-3af6-48ea-81e3-792a96f3e693 to https://uploads.mangadex.org/covers/c83cb270-6883-4684-8f77-d991509d5af3/5882c21e-6af0-4d45-8fd7-f8729995a295.jpg
+[PollSource][sync-48b7c54a-0724-4142-b2ce-8310418ad1ac] Error polling source 48b7c54a-0724-4142-b2ce-8310418ad1ac: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[RefreshCover] Job refresh-mangadex-c83cb270-6883-4684-8f77-d991509d5af3 completed
+[RefreshCover] Job refresh-mangadex-f91224ca-1e79-489b-b3ea-44b36f3d630d started
+[RefreshCover] Processing a44587c4-5c8d-43eb-9f99-ea6152acc2cc (f91224ca-1e79-489b-b3ea-44b36f3d630d) from mangadex
+[PollSource][sync-53f5dcf3-1928-4e4c-9abf-680374b730a3] Waiting for rate limit token for mangadex...
+[PollSource][sync-4da39d37-ee8f-40d0-b336-0fa4d2e19033] Polling MangaDex for Isekai Maou to Shoukan Shoujo no Dorei Majutsu...
+[PollSource][sync-4da39d37-ee8f-40d0-b336-0fa4d2e19033] Error polling source 4da39d37-ee8f-40d0-b336-0fa4d2e19033: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-48b7c54a-0724-4142-b2ce-8310418ad1ac failed: Custom Id cannot contain :
+[PollSource] Job sync-4da39d37-ee8f-40d0-b336-0fa4d2e19033 completed
+[PollSource][sync-4eb2b65b-7a5f-4259-b03d-3b71fa4f3705] Polling MangaDex for Kyuuseishu ≪MESHIA≫~Isekai wo sukutta moto yuusha ga mamono no afureru genjitsu sekai wo musou suru~...
+[PollSource][sync-4eb2b65b-7a5f-4259-b03d-3b71fa4f3705] Error polling source 4eb2b65b-7a5f-4259-b03d-3b71fa4f3705: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-550322dc-e371-4d6b-ba90-242d91e385a6 started
+[PollSource][sync-550322dc-e371-4d6b-ba90-242d91e385a6] Starting process for source ID: 550322dc-e371-4d6b-ba90-242d91e385a6
+[PollSource] Job sync-5905c029-820b-43dc-93ce-b9361c14283f started
+[PollSource][sync-5905c029-820b-43dc-93ce-b9361c14283f] Starting process for source ID: 5905c029-820b-43dc-93ce-b9361c14283f
+[PollSource] Job sync-c8452c49-d000-4aa3-9fa1-b6c8a073ac7b completed
+[PollSource] Job sync-5a35ef24-4ccd-4320-b82a-65e41a76a91e started
+[PollSource][sync-5a35ef24-4ccd-4320-b82a-65e41a76a91e] Starting process for source ID: 5a35ef24-4ccd-4320-b82a-65e41a76a91e
+[PollSource] Job sync-4eb2b65b-7a5f-4259-b03d-3b71fa4f3705 completed
+[PollSource] Job sync-5c6d517b-a718-4bae-a2e7-4c41b363c698 started
+[PollSource][sync-5c6d517b-a718-4bae-a2e7-4c41b363c698] Starting process for source ID: 5c6d517b-a718-4bae-a2e7-4c41b363c698
+[PollSource][sync-4f0f6420-ac38-4aba-b5c5-96797faf0fb5] Polling MangaDex for Sokushi Cheat ga Saikyou Sugite, Isekai no Yatsura ga Marude Aite ni Naranai n desu ga...
+[PollSource][sync-4f0f6420-ac38-4aba-b5c5-96797faf0fb5] Error polling source 4f0f6420-ac38-4aba-b5c5-96797faf0fb5: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-4f0f6420-ac38-4aba-b5c5-96797faf0fb5 completed
+[PollSource] Job sync-5e4710c2-5639-4a0e-98b6-1a87e4024b25 started
+[PollSource][sync-5e4710c2-5639-4a0e-98b6-1a87e4024b25] Starting process for source ID: 5e4710c2-5639-4a0e-98b6-1a87e4024b25
+[PollSource][sync-550322dc-e371-4d6b-ba90-242d91e385a6] Waiting for rate limit token for mangadex...
+[PollSource][sync-5905c029-820b-43dc-93ce-b9361c14283f] Waiting for rate limit token for mangadex...
+[PollSource][sync-5a35ef24-4ccd-4320-b82a-65e41a76a91e] Waiting for rate limit token for mangadex...
+[PollSource][sync-5c6d517b-a718-4bae-a2e7-4c41b363c698] Waiting for rate limit token for mangadex...
+[PollSource][sync-51b19685-5889-4f5b-88c4-5fe7afaa9e09] Polling MangaDex for Maou Gakuen no Hangyakusha...
+[MangaDex] Fetching sourceId: bd935ca2-c9b6-4f2b-a3b3-77402d2337d8
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/3586407d-056f-4bd5-95ec-53041654b7a3/3b71b0e5-8e7f-41bb-b422-40afa7b516bb.jpg
+[PollSource][sync-550322dc-e371-4d6b-ba90-242d91e385a6] Polling MangaDex for Isekai de Mizu no Dai Seirei Yattemasu...
+[MangaDex] Fetching sourceId: f2ba181a-3651-4903-b391-44134a57c144
+[PollSource][sync-5e4710c2-5639-4a0e-98b6-1a87e4024b25] Waiting for rate limit token for mangadex...
+[PollSource][sync-5905c029-820b-43dc-93ce-b9361c14283f] Polling MangaDex for Tsuihousareru Tabi ni Skill wo Te ni Ireta Ore ga, 100 no Isekai de 2-shuume Musou...
+[PollSource][sync-5905c029-820b-43dc-93ce-b9361c14283f] Error polling source 5905c029-820b-43dc-93ce-b9361c14283f: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[RefreshCover] Updated cover for ca7c586e-e64a-42f3-bf3a-cbc4b36bb43c to https://uploads.mangadex.org/covers/3586407d-056f-4bd5-95ec-53041654b7a3/3b71b0e5-8e7f-41bb-b422-40afa7b516bb.jpg
+[RefreshCover] Job refresh-mangadex-3586407d-056f-4bd5-95ec-53041654b7a3 completed
+[RefreshCover] Job refresh-mangadex-079a9626-b1a7-4131-a38a-3bcf3fa94875 started
+[RefreshCover] Processing 4aa6e975-4c28-4e98-930c-e38773138eb0 (079a9626-b1a7-4131-a38a-3bcf3fa94875) from mangadex
+[PollSource] Job sync-5905c029-820b-43dc-93ce-b9361c14283f completed
+[PollSource] Job sync-5e928a8d-8556-4521-af55-47d0e86d353c started
+[PollSource][sync-5e928a8d-8556-4521-af55-47d0e86d353c] Starting process for source ID: 5e928a8d-8556-4521-af55-47d0e86d353c
+[PollSource][sync-51efbfa4-3e04-4253-90c6-2999f8250771] Polling MangaDex for The Hero Who Returned Remains the Strongest in the Modern World...
+[PollSource][sync-51efbfa4-3e04-4253-90c6-2999f8250771] Error polling source 51efbfa4-3e04-4253-90c6-2999f8250771: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-51b19685-5889-4f5b-88c4-5fe7afaa9e09] Error polling source 51b19685-5889-4f5b-88c4-5fe7afaa9e09: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource][sync-550322dc-e371-4d6b-ba90-242d91e385a6] Error polling source 550322dc-e371-4d6b-ba90-242d91e385a6: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource] Job sync-51efbfa4-3e04-4253-90c6-2999f8250771 completed
+[PollSource] Job sync-5ebf3762-8f6d-4a1f-b512-430fdbb99dbe started
+[PollSource][sync-5ebf3762-8f6d-4a1f-b512-430fdbb99dbe] Starting process for source ID: 5ebf3762-8f6d-4a1f-b512-430fdbb99dbe
+[PollSource] Job sync-51b19685-5889-4f5b-88c4-5fe7afaa9e09 failed: Custom Id cannot contain :
+[PollSource][sync-44289427-fd73-4b32-841f-3d5a53814deb] Polling MangaDex for Henkyou no Yakushi, Miyako de S Rank Boukensha to naru...
+[PollSource][sync-44289427-fd73-4b32-841f-3d5a53814deb] Error polling source 44289427-fd73-4b32-841f-3d5a53814deb: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-6194f1b5-20e8-4ef1-96c9-ccef4fcb2c0f started
+[PollSource][sync-6194f1b5-20e8-4ef1-96c9-ccef4fcb2c0f] Starting process for source ID: 6194f1b5-20e8-4ef1-96c9-ccef4fcb2c0f
+[PollSource] Job sync-550322dc-e371-4d6b-ba90-242d91e385a6 failed: Custom Id cannot contain :
+[PollSource][sync-5e928a8d-8556-4521-af55-47d0e86d353c] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-44289427-fd73-4b32-841f-3d5a53814deb completed
+[PollSource][sync-0fc0cddc-600d-4011-b9c0-ba456748a626] Polling MangaDex for RTA Sousha wa Game Sekai kara Kaerenai...
+[MangaDex] Fetching sourceId: ac743453-99ef-49e5-93e5-265cfff01fe0
+[PollSource] Job sync-629628df-2813-4635-96a2-1c7836239dc7 started
+[PollSource][sync-629628df-2813-4635-96a2-1c7836239dc7] Starting process for source ID: 629628df-2813-4635-96a2-1c7836239dc7
+[PollSource] Job sync-62a2198b-6497-4ed4-824c-3786c6ad4971 started
+[PollSource][sync-62a2198b-6497-4ed4-824c-3786c6ad4971] Starting process for source ID: 62a2198b-6497-4ed4-824c-3786c6ad4971
+[PollSource][sync-5ebf3762-8f6d-4a1f-b512-430fdbb99dbe] Waiting for rate limit token for mangadex...
+[PollSource][sync-187d2142-d44f-4997-869b-eaa6605bc7b6] Polling MangaDex for Takaga Shishaku Chakunan ni Koukina Hitotachi ga Guigui Kite Komaru...
+[PollSource][sync-187d2142-d44f-4997-869b-eaa6605bc7b6] Error polling source 187d2142-d44f-4997-869b-eaa6605bc7b6: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-6194f1b5-20e8-4ef1-96c9-ccef4fcb2c0f] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-187d2142-d44f-4997-869b-eaa6605bc7b6 completed
+[PollSource] Job sync-633cd8c9-ddc6-4933-b8c9-acd1c7756c5c started
+[PollSource][sync-633cd8c9-ddc6-4933-b8c9-acd1c7756c5c] Starting process for source ID: 633cd8c9-ddc6-4933-b8c9-acd1c7756c5c
+[PollSource][sync-7058a9a4-96f6-41b1-9bcc-f0e84639790d] Polling MangaDex for Versus...
+[MangaDex] Fetching sourceId: 09bbbb75-1086-4e7c-b775-ae9ee1816e0d
+[PollSource][sync-629628df-2813-4635-96a2-1c7836239dc7] Waiting for rate limit token for mangadex...
+[PollSource][sync-62a2198b-6497-4ed4-824c-3786c6ad4971] Waiting for rate limit token for mangadex...
+[PollSource][sync-6194f1b5-20e8-4ef1-96c9-ccef4fcb2c0f] Polling MangaDex for Saikyou de Saisoku no Mugen Level Up...
+[PollSource][sync-6194f1b5-20e8-4ef1-96c9-ccef4fcb2c0f] Error polling source 6194f1b5-20e8-4ef1-96c9-ccef4fcb2c0f: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-0fc0cddc-600d-4011-b9c0-ba456748a626] Error polling source 0fc0cddc-600d-4011-b9c0-ba456748a626: Error: Custom Id cannot contain :
+    at Job.validateOptions (/home/user/app/node_modules/bullmq/src/classes/job.ts:1514:15)
+    at Job.addJob (/home/user/app/node_modules/bullmq/src/classes/job.ts:1444:10)
+    at Function.createBulk (/home/user/app/node_modules/bullmq/src/classes/job.ts:320:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/queue.ts:415:16)
+[PollSource] Job sync-6194f1b5-20e8-4ef1-96c9-ccef4fcb2c0f completed
+[PollSource] Job sync-6480d6ff-3f95-47ef-bedb-adcc941fdba1 started
+[PollSource][sync-6480d6ff-3f95-47ef-bedb-adcc941fdba1] Starting process for source ID: 6480d6ff-3f95-47ef-bedb-adcc941fdba1
+[PollSource][sync-633cd8c9-ddc6-4933-b8c9-acd1c7756c5c] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-0fc0cddc-600d-4011-b9c0-ba456748a626 failed: Custom Id cannot contain :
+[PollSource] Job sync-6648fa44-b948-43b5-bcd0-ae4f7c1c5026 started
+[PollSource][sync-6648fa44-b948-43b5-bcd0-ae4f7c1c5026] Starting process for source ID: 6648fa44-b948-43b5-bcd0-ae4f7c1c5026
+[PollSource][sync-5ebf3762-8f6d-4a1f-b512-430fdbb99dbe] Polling MangaDex for The Strongest Heretic Plant User...
+[PollSource][sync-5ebf3762-8f6d-4a1f-b512-430fdbb99dbe] Error polling source 5ebf3762-8f6d-4a1f-b512-430fdbb99dbe: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[RefreshCover] MangaDex returned cover: https://uploads.mangadex.org/covers/2ae11ecf-f527-47e4-983e-8ae73c3b6a7b/d8f93760-271d-4965-b48d-652caf5b453a.jpg
+[PollSource][sync-6480d6ff-3f95-47ef-bedb-adcc941fdba1] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-5ebf3762-8f6d-4a1f-b512-430fdbb99dbe completed
+[PollSource] Job sync-686608ff-f7fb-416e-b832-1d624859461e started
+[PollSource][sync-686608ff-f7fb-416e-b832-1d624859461e] Starting process for source ID: 686608ff-f7fb-416e-b832-1d624859461e
+[PollSource][sync-633cd8c9-ddc6-4933-b8c9-acd1c7756c5c] Polling MangaDex for Hazure Waku no Joutai Ijou Skill de Saikyou ni Natta Ore ga Subete wo Juurin Suru made...
+[PollSource][sync-633cd8c9-ddc6-4933-b8c9-acd1c7756c5c] Error polling source 633cd8c9-ddc6-4933-b8c9-acd1c7756c5c: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource] Job sync-7058a9a4-96f6-41b1-9bcc-f0e84639790d completed
+[PollSource] Job sync-690428d3-09be-4f6b-bf4d-28a998dddc78 started
+[PollSource][sync-690428d3-09be-4f6b-bf4d-28a998dddc78] Starting process for source ID: 690428d3-09be-4f6b-bf4d-28a998dddc78
+[PollSource][sync-6648fa44-b948-43b5-bcd0-ae4f7c1c5026] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-633cd8c9-ddc6-4933-b8c9-acd1c7756c5c completed
+[PollSource] Job sync-69099d6a-ead2-48b0-8402-85f3a18586e3 started
+[PollSource][sync-69099d6a-ead2-48b0-8402-85f3a18586e3] Starting process for source ID: 69099d6a-ead2-48b0-8402-85f3a18586e3
+[PollSource][sync-5e928a8d-8556-4521-af55-47d0e86d353c] Polling MangaDex for Mairimashita! Iruma-kun...
+[PollSource][sync-5e928a8d-8556-4521-af55-47d0e86d353c] Error polling source 5e928a8d-8556-4521-af55-47d0e86d353c: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[RefreshCover] Updated cover for 56e7bf74-e4df-47a3-8e79-7f19c149e227 to https://uploads.mangadex.org/covers/2ae11ecf-f527-47e4-983e-8ae73c3b6a7b/d8f93760-271d-4965-b48d-652caf5b453a.jpg
+[RefreshCover] Job refresh-mangadex-2ae11ecf-f527-47e4-983e-8ae73c3b6a7b completed
+[RefreshCover] Job refresh-mangadex-3ec17d08-5488-4f26-9737-02ed76815fec started
+[RefreshCover] Processing 920b6ad6-4607-4295-8969-86e9c75f70cb (3ec17d08-5488-4f26-9737-02ed76815fec) from mangadex
+[PollSource][sync-686608ff-f7fb-416e-b832-1d624859461e] Waiting for rate limit token for mangadex...
+[PollSource] Job sync-5e928a8d-8556-4521-af55-47d0e86d353c completed
+[PollSource] Job sync-6c23bea0-f5a4-4b7b-a588-8c8d3f9d0348 started
+[PollSource][sync-6c23bea0-f5a4-4b7b-a588-8c8d3f9d0348] Starting process for source ID: 6c23bea0-f5a4-4b7b-a588-8c8d3f9d0348
+[PollSource][sync-426bcf5a-14da-433c-835d-e32c5ea58efe] Polling MangaDex for Dungeon Odyssey...
+[PollSource][sync-426bcf5a-14da-433c-835d-e32c5ea58efe] Error polling source 426bcf5a-14da-433c-835d-e32c5ea58efe: ScraperError: Invalid MangaDex ID format
+    at MangaDexScraper.scrapeSeries (/home/user/app/src/lib/scrapers/index.ts:194:13)
+    at Worker.processPollSource (/home/user/app/src/workers/processors/poll-source.processor.ts:114:39)
+    at async <anonymous> (/home/user/app/node_modules/bullmq/src/classes/worker.ts:990:26) {
+  source: 'mangadex',
+  isRetryable: false,
+  code: undefined
+}
+[PollSource][sync-690428d3-09be-4f6b-bf4d-28a998dddc78] Waiting for rate limit token for mangadex...

@@ -386,7 +386,7 @@ export async function checkRateLimit(
   maxRequests: number = 100,
   windowMs: number = 60000
 ): Promise<boolean> {
-  const redisReady = await waitForRedis(500); // Short wait for Redis
+  const redisReady = await waitForRedis(redisApi, 500); // Short wait for Redis
   const redisKey = `${REDIS_KEY_PREFIX}ratelimit:${key}`;
 
   if (redisReady) {

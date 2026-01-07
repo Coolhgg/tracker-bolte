@@ -298,7 +298,7 @@ function getParam(
               const queryHash = Buffer.from(queryStr.toLowerCase().trim()).toString('base64').slice(0, 32)
               const cooldownKey = `${REDIS_KEY_PREFIX}cooldown:search:${ip}:${queryHash}`
               
-              const redisReady = await waitForRedis(1000)
+              const redisReady = await waitForRedis(redisApi, 1000)
               
               if (redisReady) {
                 const isCoolingDown = await redis.get(cooldownKey)

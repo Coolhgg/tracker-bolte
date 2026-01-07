@@ -60,7 +60,7 @@ export async function getCachedSearchResult(
   query: string,
   filters: Record<string, any>
 ): Promise<CachedSearchResult | null> {
-  const ready = await waitForRedis(1000);
+  const ready = await waitForRedis(redisApi, 1000);
   if (!ready) return null;
 
   try {
@@ -86,7 +86,7 @@ export async function setCachedSearchResult(
   result: Omit<CachedSearchResult, 'cached_at' | 'source'>,
   config: Partial<SearchCacheConfig> = {}
 ): Promise<void> {
-  const ready = await waitForRedis(1000);
+  const ready = await waitForRedis(redisApi, 1000);
   if (!ready) return;
 
   const { ttlSeconds } = { ...DEFAULT_CONFIG, ...config };
@@ -260,7 +260,7 @@ export async function getSearchCacheStats(): Promise<{
 }
 
 export async function invalidateSearchCache(pattern?: string): Promise<number> {
-  const ready = await waitForRedis(1000);
+  const ready = await waitForRedis(redisApi, 1000);
   if (!ready) return 0;
 
   try {
