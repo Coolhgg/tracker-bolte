@@ -3,7 +3,7 @@ import { prisma } from '@/lib/prisma';
 import { notificationDeliveryQueue, notificationDeliveryPremiumQueue, notificationQueue, isQueueHealthy } from '@/lib/queues';
 import { shouldNotifyChapter } from '@/lib/notifications-throttling';
 import { z } from 'zod';
-import { redis, REDIS_KEY_PREFIX } from '@/lib/redis';
+import { redisWorkerClient, REDIS_KEY_PREFIX } from '@/lib/redis';
 
 const NotificationJobDataSchema = z.object({
   seriesId: z.string().uuid(),
@@ -45,12 +45,12 @@ export async function processNotification(job: Job<NotificationJobData>) {
     const bufferKey = `${REDIS_KEY_PREFIX}notif:buffer:${seriesId}`;
 
     // Try to set the coalesce lock
-    const isFirst = await redis.set(coalesceKey, 'locked', 'PX', COALESCE_WINDOW_MS, 'NX');
+    const isFirst = await redisWorkerClient.set(coalesceKey, 'locked', 'PX', COALESCE_WINDOW_MS, 'NX');
     
     if (isFirst !== 'OK') {
       // Not the first job in the window. Append our chapter to the buffer and exit.
-      await redis.sadd(bufferKey, chapterNumber.toString());
-      await redis.expire(bufferKey, 30); // 30s TTL for safety
+      await redisWorkerClient.sadd(bufferKey, chapterNumber.toString());
+      await redisWorkerClient.expire(bufferKey, 30); // 30s TTL for safety
       console.log(`[Notification-Master] Coalescing chapter ${chapterNumber} for series ${seriesId}`);
       return;
     }
@@ -59,11 +59,11 @@ export async function processNotification(job: Job<NotificationJobData>) {
     await new Promise(resolve => setTimeout(resolve, COALESCE_WINDOW_MS));
 
     // Pull all collected chapters from the buffer
-    const bufferedChapters = await redis.smembers(bufferKey);
+    const bufferedChapters = await redisWorkerClient.smembers(bufferKey);
     if (bufferedChapters.length > 0) {
       const additionalNumbers = bufferedChapters.map(Number);
       chapterNumbers = Array.from(new Set([...chapterNumbers, ...additionalNumbers])).sort((a, b) => a - b);
-      await redis.del(bufferKey);
+      await redisWorkerClient.del(bufferKey);
     }
   }
 
@@ -177,7 +177,7 @@ export async function processNotification(job: Job<NotificationJobData>) {
 
       // Check if user already notified for this logical chapter (Dedupe across sources)
       const userDedupeKey = `${REDIS_KEY_PREFIX}notif:sent:user:${sub.user_id}:chapter:${seriesId}:${displayChapter}`;
-      const alreadyNotified = await redis.get(userDedupeKey);
+      const alreadyNotified = await redisWorkerClient.get(userDedupeKey);
       if (alreadyNotified) continue;
 
       // Source Preference Logic
@@ -199,7 +199,7 @@ export async function processNotification(job: Job<NotificationJobData>) {
       if (!shouldNotifyThisSource) continue;
 
       // Mark as notified in Redis (TTL 7 days)
-      await redis.set(userDedupeKey, '1', 'EX', 7 * 24 * 60 * 60);
+      await redisWorkerClient.set(userDedupeKey, '1', 'EX', 7 * 24 * 60 * 60);
 
       if (isImmediate) {
         if (isPremium) {

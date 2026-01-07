@@ -25,10 +25,9 @@ function parseSentinelHosts(): Array<{ host: string; port: number }> {
 
 /**
  * Build Redis connection options based on mode (single-node vs Sentinel).
- * - Single-node: Uses REDIS_URL (default behavior, backward compatible)
- * - Sentinel: Uses REDIS_SENTINEL_* env vars for HA setup
+ * @param url Optional explicit Redis URL. If not provided, defaults based on environment.
  */
-function buildRedisOptions(): RedisOptions {
+export function buildRedisOptions(url?: string): RedisOptions {
   const baseOptions: RedisOptions = {
     maxRetriesPerRequest: null, // REQUIRED for BullMQ
     enableOfflineQueue: false,  // Fail fast if disconnected
@@ -43,8 +42,8 @@ function buildRedisOptions(): RedisOptions {
     },
   };
 
-  if (isSentinelMode) {
-    // Sentinel mode configuration
+  if (isSentinelMode && !url) {
+    // Sentinel mode configuration (only if no explicit URL is provided)
     const sentinels = parseSentinelHosts();
     const masterName = process.env.REDIS_SENTINEL_MASTER_NAME || 'mymaster';
     const sentinelPassword = process.env.REDIS_SENTINEL_PASSWORD || undefined;
@@ -58,22 +57,18 @@ function buildRedisOptions(): RedisOptions {
       name: masterName,
       sentinelPassword,
       password: redisPassword,
-      // Sentinel-specific options for HA
       enableReadyCheck: true,
       sentinelRetryStrategy: (times) => {
         if (times > 5) return null;
         return Math.min(times * 1000, 5000);
       },
-      // On failover, automatically update to new master
       failoverDetector: true,
     };
   }
 
-  // Single-node mode (default - backward compatible)
-  const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
+  // Single-node mode
+  const redisUrl = url || process.env.REDIS_URL || 'redis://localhost:6379';
   const parsedUrl = new URL(redisUrl);
-
-  console.log('[Redis] Single-node mode using REDIS_URL');
 
   return {
     ...baseOptions,
@@ -85,21 +80,19 @@ function buildRedisOptions(): RedisOptions {
 }
 
 /**
- * Connection options for BullMQ (NOT a shared instance).
- * BullMQ will create its own managed connections using these options.
- * Supports both single-node and Sentinel modes.
- */
-export const redisConnection: RedisOptions = buildRedisOptions();
-
-/**
  * Singleton pattern for Next.js hot reload protection
  */
-const globalForRedis = globalThis as unknown as { redis: Redis | undefined };
+const globalForRedis = globalThis as unknown as { 
+  redisApi: Redis | undefined;
+  redisWorker: Redis | undefined;
+};
 
-function createRedisClient(): Redis {
+/**
+ * Creates a configured Redis client.
+ */
+function createRedisClient(options: RedisOptions, name: string): Redis {
   const client = new Redis({
-    ...redisConnection,
-    enableReadyCheck: true,
+    ...options,
     lazyConnect: true,
   });
 
@@ -107,113 +100,97 @@ function createRedisClient(): Redis {
     if (err.message.includes('ECONNREFUSED') || err.message.includes('ENOTFOUND')) {
       return;
     }
-    console.error('[Redis] Unexpected error:', err.message);
+    console.error(`[Redis:${name}] Unexpected error:`, err.message);
   });
 
-  client.on('connect', () => console.log('[Redis] Connection initialized'));
-  client.on('close', () => console.log('[Redis] Connection closed'));
-  client.on('ready', () => console.log('[Redis] Ready to accept commands'));
+  client.on('connect', () => console.log(`[Redis:${name}] Connection initialized`));
+  client.on('close', () => console.log(`[Redis:${name}] Connection closed`));
+  client.on('ready', () => console.log(`[Redis:${name}] Ready to accept commands`));
 
-  // Sentinel-specific events for debugging
-  if (isSentinelMode) {
+  if (isSentinelMode && !options.host) {
     client.on('+switch-master', () => {
-      console.log('[Redis Sentinel] Master switch detected - reconnecting to new master');
+      console.log(`[Redis:${name} Sentinel] Master switch detected - reconnecting to new master`);
     });
   }
 
   return client;
 }
 
-export const redis = globalForRedis.redis ?? createRedisClient();
+// REDIS A: API + caching
+export const redisApi = globalForRedis.redisApi ?? createRedisClient(
+  { 
+    ...buildRedisOptions(process.env.REDIS_API_URL || process.env.REDIS_URL),
+    enableReadyCheck: true 
+  },
+  'API'
+);
+
+// REDIS B: Workers + BullMQ queues
+export const redisWorker = globalForRedis.redisWorker ?? createRedisClient(
+  { 
+    ...buildRedisOptions(process.env.REDIS_WORKER_URL || process.env.REDIS_URL),
+    maxRetriesPerRequest: null, // CRITICAL for BullMQ
+    enableReadyCheck: false // Requested for workers
+  },
+  'Worker'
+);
+
+// Compatibility aliases
+export const redis = redisApi;
+export const redisApiClient = redisApi;
+export const redisWorkerClient = redisWorker;
 
 if (process.env.NODE_ENV !== 'production') {
-  globalForRedis.redis = redis;
+  globalForRedis.redisApi = redisApi;
+  globalForRedis.redisWorker = redisWorker;
 }
 
 /**
- * Check if Redis is currently connected and responsive.
- * Uses the actual redis.status which is authoritative.
+ * Connection options for BullMQ (uses Worker Redis).
  */
-export function isRedisAvailable(): boolean {
-  const status = redis.status;
-  return status === 'ready';
+export const redisConnection: RedisOptions = {
+  ...buildRedisOptions(process.env.REDIS_WORKER_URL || process.env.REDIS_URL),
+  maxRetriesPerRequest: null,
+  enableReadyCheck: false,
+};
+
+/**
+ * Check if Redis is currently connected and responsive.
+ */
+export function isRedisAvailable(client: Redis = redisApi): boolean {
+  return client.status === 'ready';
 }
 
 /**
  * Wait for Redis to be ready (with timeout).
- * Useful for initial connection establishment in serverless environments.
- * Works with both single-node and Sentinel modes.
  */
-export async function waitForRedis(timeoutMs: number = 3000): Promise<boolean> {
-  const status = redis.status;
+export async function waitForRedis(client: Redis = redisApi, timeoutMs: number = 3000): Promise<boolean> {
+  if (client.status === 'ready') return true;
+  if (client.status === 'end' || client.status === 'close') return false;
   
-  // Already ready
-  if (status === 'ready') {
-    return true;
-  }
-  
-  // Already failed/closed - not going to recover
-  if (status === 'end' || status === 'close') {
-    console.log('[Redis] waitForRedis: Connection ended/closed, returning false');
-    return false;
-  }
-  
-  // Wait for ready event or timeout
   return new Promise((resolve) => {
-    const timeout = setTimeout(() => {
-      console.log('[Redis] waitForRedis: Timeout waiting for ready state (status=%s)', redis.status);
-      resolve(false);
-    }, timeoutMs);
-    
-    const onReady = () => {
-      clearTimeout(timeout);
-      redis.off('error', onError);
-      resolve(true);
-    };
-    
-    const onError = () => {
-      clearTimeout(timeout);
-      redis.off('ready', onReady);
-      resolve(false);
-    };
-    
-    redis.once('ready', onReady);
-    redis.once('error', onError);
+    const timeout = setTimeout(() => resolve(false), timeoutMs);
+    const onReady = () => { clearTimeout(timeout); client.off('error', onError); resolve(true); };
+    const onError = () => { clearTimeout(timeout); client.off('ready', onReady); resolve(false); };
+    client.once('ready', onReady);
+    client.once('error', onError);
   });
 }
 
 /**
- * Check if workers are online by checking for a heartbeat key in Redis.
- * Workers should set this key periodically.
- * This function will wait briefly for Redis to connect if needed.
- * Works with both single-node and Sentinel modes.
+ * Check if workers are online (status stored in API Redis).
  */
 export async function areWorkersOnline(): Promise<boolean> {
-  // Wait for Redis to be ready (up to 3 seconds)
-  const redisReady = await waitForRedis(3000);
-  
-  if (!redisReady) {
-    console.log('[Redis] areWorkersOnline: Redis not ready after waiting (status=%s)', redis.status);
-    return false;
-  }
+  const redisReady = await waitForRedis(redisApi, 3000);
+  if (!redisReady) return false;
   
   try {
-    const heartbeat = await redis.get(`${REDIS_KEY_PREFIX}workers:heartbeat`);
+    const heartbeat = await redisApi.get(`${REDIS_KEY_PREFIX}workers:heartbeat`);
+    if (!heartbeat) return false;
     
-    if (!heartbeat) {
-      console.log('[Redis] areWorkersOnline: No heartbeat key found - workers offline');
-      return false;
-    }
-    
-    // Heartbeat is valid if it's less than 15 seconds old
-    const lastBeat = parseInt(heartbeat, 10);
-    const now = Date.now();
-    const age = now - lastBeat;
-    const isValid = age < 15000; // 15 seconds
-    
-    console.log('[Redis] areWorkersOnline: Heartbeat age=%dms, isValid=%s', age, isValid);
-    
-    return isValid;
+    const data = JSON.parse(heartbeat);
+    const age = Date.now() - data.timestamp;
+    return age < 15000;
   } catch (err) {
     console.error('[Redis] Error checking worker heartbeat:', err);
     return false;
@@ -221,32 +198,24 @@ export async function areWorkersOnline(): Promise<boolean> {
 }
 
 /**
- * Set worker heartbeat (called by worker process).
- * Sets key with 10 second TTL, called every 5 seconds by workers.
- * Remains functional during Sentinel failover (reconnects automatically).
- * Now includes health data to satisfy BUG 7.
+ * Set worker heartbeat (stored in API Redis).
  */
 export async function setWorkerHeartbeat(healthData?: any): Promise<void> {
   try {
-    // BUG 7: Verify Redis is actually reachable with a ping
-    await redis.ping();
-
     const payload = {
       timestamp: Date.now(),
       health: healthData || { status: 'healthy' },
       pid: process.pid,
     };
-
-    await redis.set(`${REDIS_KEY_PREFIX}workers:heartbeat`, JSON.stringify(payload), 'EX', 10);
-    console.log('[Workers] Heartbeat updated with health data');
+    await redisApi.set(`${REDIS_KEY_PREFIX}workers:heartbeat`, JSON.stringify(payload), 'EX', 10);
   } catch (err) {
-    console.error('[Redis] Error setting worker heartbeat (Redis might be unreachable):', err);
-    throw err; // Rethrow so caller knows heartbeat failed
+    console.error('[Redis] Error setting worker heartbeat:', err);
+    throw err;
   }
 }
 
 /**
- * Simple distributed lock using Redis (BUG 25)
+ * Distributed lock using Worker Redis.
  */
 export async function withLock<T>(
   lockKey: string,
@@ -255,18 +224,13 @@ export async function withLock<T>(
 ): Promise<T> {
   const fullLockKey = `${REDIS_KEY_PREFIX}lock:${lockKey}`;
   const lockValue = Math.random().toString(36).slice(2);
+  const acquired = await redisWorker.set(fullLockKey, lockValue, 'PX', ttlMs, 'NX');
   
-  // Try to acquire lock
-  const acquired = await redis.set(fullLockKey, lockValue, 'PX', ttlMs, 'NX');
-  
-  if (!acquired) {
-    throw new Error(`Failed to acquire lock: ${lockKey}`);
-  }
+  if (!acquired) throw new Error(`Failed to acquire lock: ${lockKey}`);
   
   try {
     return await fn();
   } finally {
-    // Release lock ONLY if we still own it (using Lua for atomicity)
     const script = `
       if redis.call("get", KEYS[1]) == ARGV[1] then
         return redis.call("del", KEYS[1])
@@ -274,26 +238,28 @@ export async function withLock<T>(
         return 0
       end
     `;
-    await redis.eval(script, 1, fullLockKey, lockValue);
+    await redisWorker.eval(script, 1, fullLockKey, lockValue);
   }
 }
 
 /**
- * Safely disconnects from Redis, ensuring all pending commands are processed.
+ * Safely disconnects from both Redis clients.
  */
 export async function disconnectRedis(): Promise<void> {
-  if (redis.status === 'end') return;
-  
-  try {
-    await redis.quit();
-    console.log('[Redis] Disconnected');
-  } catch (err) {
-    console.error('[Redis] Error during disconnect:', err);
-    redis.disconnect(); // Force disconnect if quit fails
-  }
+  const disconnect = async (client: Redis, name: string) => {
+    if (client.status === 'end') return;
+    try {
+      await client.quit();
+      console.log(`[Redis:${name}] Disconnected`);
+    } catch (err) {
+      client.disconnect();
+    }
+  };
+
+  await Promise.all([
+    disconnect(redisApi, 'API'),
+    disconnect(redisWorker, 'Worker')
+  ]);
 }
 
-/**
- * Export mode for diagnostics/logging
- */
 export const redisMode = isSentinelMode ? 'sentinel' : 'single-node';

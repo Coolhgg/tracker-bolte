@@ -1,5 +1,5 @@
 import { Queue } from 'bullmq';
-import { redis, REDIS_KEY_PREFIX, redisMode } from './redis';
+import { redisWorker, REDIS_KEY_PREFIX, redisMode } from './redis';
 
 export const SYNC_SOURCE_QUEUE = 'sync-source';
 export const CHECK_SOURCE_QUEUE = 'check-source';
@@ -13,13 +13,12 @@ export const CHAPTER_INGEST_QUEUE = 'chapter-ingest';
 export const GAP_RECOVERY_QUEUE = 'gap-recovery';
 
 /**
- * Queue options using the shared Redis singleton instance.
- * This ensures all queues share a single connection to Redis,
- * preventing connection exhaustion.
- * Supports both single-node and Sentinel modes automatically.
+ * Queue options using the Worker Redis instance.
+ * This ensures all queues share connections to the dedicated worker Redis,
+ * preventing connection exhaustion on the API Redis.
  */
 const queueOptions = {
-  connection: redis, // Uses the shared singleton Redis instance
+  connection: redisWorker,
   prefix: REDIS_KEY_PREFIX,
 };
 
@@ -45,7 +44,6 @@ export const syncSourceQueue = globalForQueues.syncSourceQueue ?? new Queue(SYNC
     attempts: 3,
     backoff: { type: 'exponential', delay: 5000 },
     removeOnComplete: { count: 100, age: 3600 },
-    // BUG 8: Persist failed jobs for manual review (Dead Letter Queue strategy)
     removeOnFail: { count: 5000 }, 
   },
 });
@@ -56,7 +54,6 @@ export const chapterIngestQueue = globalForQueues.chapterIngestQueue ?? new Queu
     attempts: 3,
     backoff: { type: 'exponential', delay: 5000 },
     removeOnComplete: { count: 500, age: 3600 },
-    // BUG 8: Persist failed jobs for manual review
     removeOnFail: { count: 10000 },
   },
 });
@@ -77,7 +74,6 @@ export const notificationQueue = globalForQueues.notificationQueue ?? new Queue(
     attempts: 5,
     backoff: { type: 'exponential', delay: 1000 },
     removeOnComplete: { count: 100, age: 3600 },
-    // BUG 8: Critical queue - keep more failures
     removeOnFail: { count: 5000 },
   },
 });
@@ -156,7 +152,6 @@ if (process.env.NODE_ENV !== 'production') {
 
 /**
  * Gets the overall system health for notifications.
- * Returns thresholds for circuit breaking.
  */
 export async function getNotificationSystemHealth(): Promise<{ 
   totalWaiting: number; 
