@@ -1,15 +1,15 @@
 import 'dotenv/config';
 import { Worker } from 'bullmq';
-import { redisWorker, disconnectRedis, REDIS_KEY_PREFIX, setWorkerHeartbeat } from '@/lib/redis';
+import { redisWorkerClient, disconnectRedis, REDIS_KEY_PREFIX, setWorkerHeartbeat } from '@/lib/redis';
 import { 
-    SYNC_SOURCE_QUEUE, CHECK_SOURCE_QUEUE, NOTIFICATION_QUEUE, 
-      NOTIFICATION_DELIVERY_QUEUE, NOTIFICATION_DELIVERY_PREMIUM_QUEUE, NOTIFICATION_DIGEST_QUEUE,
-      CANONICALIZE_QUEUE, REFRESH_COVER_QUEUE, CHAPTER_INGEST_QUEUE, GAP_RECOVERY_QUEUE,
-      syncSourceQueue, checkSourceQueue, notificationQueue,
-      notificationDeliveryQueue, notificationDeliveryPremiumQueue, notificationDigestQueue,
-      canonicalizeQueue, refreshCoverQueue, chapterIngestQueue, gapRecoveryQueue,
-      getNotificationSystemHealth
-    } from '@/lib/queues';
+  SYNC_SOURCE_QUEUE, CHECK_SOURCE_QUEUE, NOTIFICATION_QUEUE, 
+    NOTIFICATION_DELIVERY_QUEUE, NOTIFICATION_DELIVERY_PREMIUM_QUEUE, NOTIFICATION_DIGEST_QUEUE,
+    CANONICALIZE_QUEUE, REFRESH_COVER_QUEUE, CHAPTER_INGEST_QUEUE, GAP_RECOVERY_QUEUE,
+    syncSourceQueue, checkSourceQueue, notificationQueue,
+    notificationDeliveryQueue, notificationDeliveryPremiumQueue, notificationDigestQueue,
+    canonicalizeQueue, refreshCoverQueue, chapterIngestQueue, gapRecoveryQueue,
+    getNotificationSystemHealth
+  } from '@/lib/queues';
 import { processPollSource } from './processors/poll-source.processor';
 import { processChapterIngest } from './processors/chapter-ingest.processor';
 import { processCheckSource } from './processors/check-source.processor';
@@ -40,7 +40,7 @@ canonicalizeWorker = new Worker(
   CANONICALIZE_QUEUE,
   processCanonicalize,
   { 
-    connection: redisWorker,
+    connection: redisWorkerClient,
     prefix: REDIS_KEY_PREFIX,
     concurrency: 2,
   }
@@ -51,7 +51,7 @@ pollSourceWorker = new Worker(
   SYNC_SOURCE_QUEUE,
   processPollSource,
   { 
-    connection: redisWorker,
+    connection: redisWorkerClient,
     prefix: REDIS_KEY_PREFIX,
     concurrency: 20,
     limiter: {
@@ -66,7 +66,7 @@ chapterIngestWorker = new Worker(
   CHAPTER_INGEST_QUEUE,
   processChapterIngest,
   { 
-    connection: redisWorker,
+    connection: redisWorkerClient,
     prefix: REDIS_KEY_PREFIX,
     concurrency: 10,
   }
@@ -77,7 +77,7 @@ checkSourceWorker = new Worker(
   CHECK_SOURCE_QUEUE,
   processCheckSource,
   { 
-    connection: redisWorker,
+    connection: redisWorkerClient,
     prefix: REDIS_KEY_PREFIX,
     concurrency: 2,
     limiter: {
@@ -92,7 +92,7 @@ notificationWorker = new Worker(
   NOTIFICATION_QUEUE,
   processNotification,
   { 
-    connection: redisWorker,
+    connection: redisWorkerClient,
     prefix: REDIS_KEY_PREFIX,
     concurrency: 3,
   }
@@ -103,7 +103,7 @@ notificationDeliveryWorker = new Worker(
   NOTIFICATION_DELIVERY_QUEUE,
   processNotificationDelivery,
   { 
-    connection: redisWorker,
+    connection: redisWorkerClient,
     prefix: REDIS_KEY_PREFIX,
     concurrency: 5,
   }
@@ -114,7 +114,7 @@ notificationDeliveryPremiumWorker = new Worker(
   NOTIFICATION_DELIVERY_PREMIUM_QUEUE,
   processNotificationDelivery,
   { 
-    connection: redisWorker,
+    connection: redisWorkerClient,
     prefix: REDIS_KEY_PREFIX,
     concurrency: 15,
     limiter: {
@@ -129,7 +129,7 @@ notificationDigestWorker = new Worker(
   NOTIFICATION_DIGEST_QUEUE,
   processNotificationDigest,
   { 
-    connection: redisWorker,
+    connection: redisWorkerClient,
     prefix: REDIS_KEY_PREFIX,
     concurrency: 1,
   }
@@ -140,7 +140,7 @@ refreshCoverWorker = new Worker(
   REFRESH_COVER_QUEUE,
   processRefreshCover,
   {
-    connection: redisWorker,
+    connection: redisWorkerClient,
     prefix: REDIS_KEY_PREFIX,
     concurrency: 5,
     limiter: {
@@ -155,7 +155,7 @@ gapRecoveryWorker = new Worker(
   GAP_RECOVERY_QUEUE,
   processGapRecovery,
   {
-    connection: redisWorker,
+    connection: redisWorkerClient,
     prefix: REDIS_KEY_PREFIX,
     concurrency: 1,
   }
@@ -213,11 +213,11 @@ let globalLockHeartbeat: NodeJS.Timeout | null = null;
 
 async function acquireGlobalLock(): Promise<boolean> {
   try {
-    const result = await redisWorker.set(WORKER_GLOBAL_LOCK_KEY, process.pid.toString(), 'EX', WORKER_GLOBAL_LOCK_TTL, 'NX');
+    const result = await redisWorkerClient.set(WORKER_GLOBAL_LOCK_KEY, process.pid.toString(), 'EX', WORKER_GLOBAL_LOCK_TTL, 'NX');
     if (result === 'OK') {
       globalLockHeartbeat = setInterval(async () => {
         try {
-          await redisWorker.expire(WORKER_GLOBAL_LOCK_KEY, WORKER_GLOBAL_LOCK_TTL);
+          await redisWorkerClient.expire(WORKER_GLOBAL_LOCK_KEY, WORKER_GLOBAL_LOCK_TTL);
         } catch (error) {
           console.error('[Workers] Failed to extend global lock TTL:', error);
         }
@@ -233,7 +233,7 @@ async function acquireGlobalLock(): Promise<boolean> {
 
 async function acquireSchedulerLock(): Promise<boolean> {
   try {
-    const result = await redisWorker.set(SCHEDULER_LOCK_KEY, process.pid.toString(), 'EX', SCHEDULER_LOCK_TTL, 'NX');
+    const result = await redisWorkerClient.set(SCHEDULER_LOCK_KEY, process.pid.toString(), 'EX', SCHEDULER_LOCK_TTL, 'NX');
     return result === 'OK';
   } catch (error) {
     console.error('[Scheduler] Failed to acquire lock:', error);
@@ -284,7 +284,7 @@ async function shutdown(signal: string) {
   console.log(`[Workers] Received ${signal}, shutting down gracefully...`);
   
   try {
-    await redisWorker.del(WORKER_GLOBAL_LOCK_KEY);
+    await redisWorkerClient.del(WORKER_GLOBAL_LOCK_KEY);
     console.log('[Workers] Global lock released');
   } catch (error) {
     console.error('[Workers] Failed to release global lock:', error);
@@ -361,7 +361,7 @@ refreshCoverWorker?.on('active', (job) => console.log(`[RefreshCover] Job ${job.
 let failedPings = 0;
 setInterval(async () => {
   try {
-    const redisPing = await redisWorker.ping();
+    const redisPing = await redisWorkerClient.ping();
     if (redisPing === 'PONG') {
       failedPings = 0;
       return;
